@@ -108,3 +108,30 @@
 .profile_button:hover {
     box-shadow: 0 3px 5px #dddddd;
 }
+
+.horizontal_line {
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.trend_nav {
+    padding: 0 40px;
+    height: 98px;
+    background-color: red;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.filters {
+    height: 78px;
+    width: auto;
+    /* display: block; */
+    background-color: aquamarine;
+    text-align: center;
+    align-items: flex-end;
+    display: inline-block;
+    /* text-rendering: auto; */
+}

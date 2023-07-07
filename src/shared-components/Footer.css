@@ -1,0 +1,41 @@
+.horizontal_line {
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.footer_line {
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    padding: 13px 40px 14px;
+    justify-content: space-between;
+}
+
+.left_side {
+    align-items: center;   
+    display: flex;
+    color: #222222;
+}
+
+.left_side button {
+    border: none;
+    background-color: none;
+}
+
+.left_side a {
+    text-decoration: none;
+    color: #222222;}
+
+.right_side {
+    align-items: center;   
+    display: flex;
+    color: #222222;
+}
+
+.dot {
+    align-items: center;
+    margin-top: 57%px;
+    padding-top: 5px;
+}

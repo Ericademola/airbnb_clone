@@ -1,14 +1,16 @@
 import company from '../assets/airbnb.png';
 import './Header.css'
-import { TbWorld } from 'react-icons/tb';
-import { GiCornerFlag, GiWindmill } from 'react-icons/gi';
+import { TbWorld, TbBuildingSkyscraper } from 'react-icons/tb';
+import { GiCornerFlag, GiWindmill, GiFamilyHouse } from 'react-icons/gi';
 import { PiSwimmingPool, PiFire,PiCastleTurret } from 'react-icons/pi';
-import { MdOutlineMapsHomeWork, MdCabin } from 'react-icons/md';
-import { TbSailboat, TbChefHat, TbBeach } from 'react-icons/tb';
+import { MdOutlineMapsHomeWork, MdCabin, MdSportsGolf, MdOutlineBedroomParent } from 'react-icons/md';
+import { TbSailboat, TbChefHat, TbBeach, TbCamper } from 'react-icons/tb';
 import { AiOutlineCoffee } from 'react-icons/ai';
 import { CgMenu } from 'react-icons/cg';
 import { IoMdContact } from 'react-icons/io';
 import { BiSearchAlt2 } from 'react-icons/bi';
+import {  } from 'react-icons/hi';
+
 
 
 
@@ -54,18 +56,91 @@ const Header = () => {
 
         </header>
 
-        <nav>
-            <PiCastleTurret />
-            <TbBeach />
-            <MdCabin />
-            <TbChefHat />
-            <AiOutlineCoffee />
-            <TbSailboat />
-            <MdOutlineMapsHomeWork style={{color: "green"}}/>
-            <GiWindmill />
-            <PiFire />
-            <PiSwimmingPool />
-            <GiCornerFlag />
+        <div className='horizontal_line'></div>
+
+        <nav className='trend_nav'>
+
+            <div className='filters'>
+                <TbBuildingSkyscraper />
+                <span>Iconic Cities</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <GiFamilyHouse />
+                <span>Mansions</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <MdOutlineBedroomParent />
+                <span>Rooms</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <MdSportsGolf />
+                <span>Golfing</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <TbCamper />
+                <span>Campers</span>
+                <div className='horizontal_line'></div>    
+            </div>
+            <div className='filters'>
+                <PiCastleTurret />
+                <span>Castles</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <TbBeach />
+                <span>Beach</span>
+                <div className='horizontal_line'></div>
+            </div> 
+            <div className='filters'>
+                <MdCabin />
+                <span>Cabins</span>
+                <div className='horizontal_line'></div>
+            </div>         
+            <div className='filters'>
+                <TbChefHat />
+                <span>Chef's kitchens</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <AiOutlineCoffee />
+                <span>Bed & breakfasts</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <TbSailboat />
+                <span>Boats</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <MdOutlineMapsHomeWork style={{color: "green"}}/>
+                <span>Design</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <GiWindmill />
+                <span>Windmills</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <PiFire />
+                <span>Trending</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <PiSwimmingPool />
+                <span>Amazing pools</span>
+                <div className='horizontal_line'></div>
+            </div>
+            <div className='filters'>
+                <GiCornerFlag />
+                <span>Top of the world</span>
+                <div className='horizontal_line'></div>
+            </div>
+
         </nav>
 
     </div>
