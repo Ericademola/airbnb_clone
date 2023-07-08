@@ -1,3 +1,4 @@
+import DisplayGrid from "../shared-components/DisplayGrid"
 import Footer from "../shared-components/Footer"
 import Header from "../shared-components/Header"
 import TreandDisplay from "../shared-components/TreandDisplay"
@@ -7,11 +8,7 @@ const Home = () => {
     <div>
         <Header />
         <TreandDisplay />
-        <div>
-            Display total price
-            <div>gi</div>
-            Includes all fees, before taxes
-        </div>
+        <DisplayGrid />
         <Footer />
     </div>
   )
