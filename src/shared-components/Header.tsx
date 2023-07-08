@@ -58,90 +58,127 @@ const Header = () => {
 
         <div className='horizontal_line'></div>
 
-        <nav className='trend_nav'>
+        <nav className='nav'>
 
-            <div className='filters'>
-                <TbBuildingSkyscraper />
-                <span>Iconic Cities</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <GiFamilyHouse />
-                <span>Mansions</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <MdOutlineBedroomParent />
-                <span>Rooms</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <MdSportsGolf />
-                <span>Golfing</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <TbCamper />
-                <span>Campers</span>
-                <div className='horizontal_line'></div>    
-            </div>
-            <div className='filters'>
-                <PiCastleTurret />
-                <span>Castles</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <TbBeach />
-                <span>Beach</span>
-                <div className='horizontal_line'></div>
-            </div> 
-            <div className='filters'>
-                <MdCabin />
-                <span>Cabins</span>
-                <div className='horizontal_line'></div>
-            </div>         
-            <div className='filters'>
-                <TbChefHat />
-                <span>Chef's kitchens</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <AiOutlineCoffee />
-                <span>Bed & breakfasts</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <TbSailboat />
-                <span>Boats</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <MdOutlineMapsHomeWork style={{color: "green"}}/>
-                <span>Design</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <GiWindmill />
-                <span>Windmills</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <PiFire />
-                <span>Trending</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <PiSwimmingPool />
-                <span>Amazing pools</span>
-                <div className='horizontal_line'></div>
-            </div>
-            <div className='filters'>
-                <GiCornerFlag />
-                <span>Top of the world</span>
-                <div className='horizontal_line'></div>
-            </div>
+            <div className='trend_nav'>
 
+                <div className='filters active'>
+                    <div className='trend_icon'>
+                        <TbBuildingSkyscraper />
+                    </div>    
+                    <span className='text'>Iconic Cities</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <GiFamilyHouse /> 
+                    </div>
+                    <span>Mansions</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <MdOutlineBedroomParent />
+                    </div>
+                    <span>Rooms</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <MdSportsGolf />
+                    </div>
+                    <span>Golfing</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <TbCamper />
+                    </div>
+                    <span>Campers</span>
+                    <div className='horizontal_lineIcon'></div>    
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <PiCastleTurret />
+                    </div>
+                    <span>Castles</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <TbBeach />
+                    </div>               
+                    <span>Beach</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div> 
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <MdCabin />
+                    </div>   
+                    <span>Cabins</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>         
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <TbChefHat />
+                    </div>                
+                    <span>Chef's kitchens</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <AiOutlineCoffee />
+                    </div>               
+                    <span>Bed & breakfasts</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <TbSailboat />
+                    </div>              
+                    <span>Boats</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <MdOutlineMapsHomeWork />
+                    </div>               
+                    <span>Design</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <GiWindmill />
+                    </div>
+                    <span>Windmills</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <PiFire />
+                    </div>
+                    <span>Trending</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <PiSwimmingPool />
+                    </div>
+                    <span>Amazing pools</span>
+                    <div className='horizontal_lineIcon'></div>
+                </div>
+                <div className='filters'>
+                    <div className='trend_icon'>
+                        <GiCornerFlag />
+                    </div>
+                    <span>Top of the world</span>
+                    <div className='horizontal_lineIcon'></div>
+            
+                </div>
+            </div>
         </nav>
+
+        <div className='horizontal_lineNav'></div>
 
     </div>
   )

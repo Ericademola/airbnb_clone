@@ -1,6 +1,7 @@
 .top {
     display: flex;
     margin: 0 3% 0 1.5%;
+    border-bottom: 1px soild #dddddd;
 }
 
 .logo_section {
@@ -114,24 +115,57 @@
     background-color: #dddddd;
 }
 
-.trend_nav {
+.nav {
     padding: 0 40px;
-    height: 98px;
-    background-color: red;
-    display: flex;
-    gap: 20px;
-    align-items: flex-end;
     overflow: hidden;
-    overflow-x: hidden;
+}
+
+.trend_nav {
+    height: 98px;
+    display: flex;
+    width: max-content;
+    gap: 35px;
+    align-items: flex-end;
 }
 
 .filters {
     height: 78px;
-    width: auto;
-    /* display: block; */
-    background-color: aquamarine;
     text-align: center;
     align-items: flex-end;
-    display: inline-block;
-    /* text-rendering: auto; */
+    color: #717171;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.filters:hover {
+    height: 78px;
+    text-align: center;
+    align-items: flex-end;
+    color: #000000;
+    border-bottom: 2px solid #dddddd;
+}
+
+.active {
+    height: 78px;
+    text-align: center;
+    align-items: flex-end;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.active:hover {
+    height: 78px;
+    text-align: center;
+    align-items: flex-end;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.trend_icon {
+    margin: 10px 0 4px;
+    font-size: 24px;
+}
+
+.horizontal_lineNav {
+    border-top: .3px solid #dddddd;
+    box-shadow: 0 1.5px 4px #c1c0c0;
 }
