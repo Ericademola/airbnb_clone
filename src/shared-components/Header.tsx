@@ -1,20 +1,37 @@
 import company from '../assets/airbnb.png';
 import './Header.css'
-import { TbWorld, TbBuildingSkyscraper } from 'react-icons/tb';
-import { GiCornerFlag, GiWindmill, GiFamilyHouse } from 'react-icons/gi';
-import { PiSwimmingPool, PiFire,PiCastleTurret } from 'react-icons/pi';
-import { MdOutlineMapsHomeWork, MdCabin, MdSportsGolf, MdOutlineBedroomParent } from 'react-icons/md';
-import { TbSailboat, TbChefHat, TbBeach, TbCamper } from 'react-icons/tb';
-import { AiOutlineCoffee } from 'react-icons/ai';
+import { TbWorld } from 'react-icons/tb';
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 import { CgMenu } from 'react-icons/cg';
-import { IoMdContact } from 'react-icons/io';
+import { IoMdContact, IoMdSwitch } from 'react-icons/io';
 import { BiSearchAlt2 } from 'react-icons/bi';
-import {  } from 'react-icons/hi';
-
-
+import trends from '../constants/trendIcon';
+import { Icon } from '../interfaces/trendIcon';
 
 
 const Header = () => {
+    
+    const button = {
+        padding: "2px 5px",
+        borderRadius: "66px",
+        border: "1px solid #ddd",
+        fontSize: "20px",
+        cursor: "pointer",
+    }
+
+    const filter = {
+        marginLeft: "23px",
+        marginRight: "40px",
+        padding: "13px 18px",
+        border: "1px solid #ddd",
+        borderRadius: "15px",
+        display: "flex",
+        gap: "8px",
+        alignItems: "center",
+        fontSize: "16px",
+        cursor: "pointer",
+    }
+
   return (
     <div>
 
@@ -60,122 +77,32 @@ const Header = () => {
 
         <nav className='nav'>
 
+            <div className='left_arrow'>
+                <span style={button}><MdKeyboardArrowLeft/></span>
+            </div>
+
             <div className='trend_nav'>
 
-                <div className='filters active'>
-                    <div className='trend_icon'>
-                        <TbBuildingSkyscraper />
-                    </div>    
-                    <span className='text'>Iconic Cities</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <GiFamilyHouse /> 
+                {trends.map((trend:Icon) => <div key={trend.id}>
+
+                    <div className='filters'>
+                        <div className='trend_icon'>
+                            {trend.icon}
+                        </div>    
+                        <span className='text'>{trend.label}</span>
+                        <div className='horizontal_lineIcon'></div>
                     </div>
-                    <span>Mansions</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <MdOutlineBedroomParent />
-                    </div>
-                    <span>Rooms</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <MdSportsGolf />
-                    </div>
-                    <span>Golfing</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <TbCamper />
-                    </div>
-                    <span>Campers</span>
-                    <div className='horizontal_lineIcon'></div>    
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <PiCastleTurret />
-                    </div>
-                    <span>Castles</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <TbBeach />
-                    </div>               
-                    <span>Beach</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div> 
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <MdCabin />
-                    </div>   
-                    <span>Cabins</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>         
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <TbChefHat />
-                    </div>                
-                    <span>Chef's kitchens</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <AiOutlineCoffee />
-                    </div>               
-                    <span>Bed & breakfasts</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <TbSailboat />
-                    </div>              
-                    <span>Boats</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <MdOutlineMapsHomeWork />
-                    </div>               
-                    <span>Design</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <GiWindmill />
-                    </div>
-                    <span>Windmills</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <PiFire />
-                    </div>
-                    <span>Trending</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <PiSwimmingPool />
-                    </div>
-                    <span>Amazing pools</span>
-                    <div className='horizontal_lineIcon'></div>
-                </div>
-                <div className='filters'>
-                    <div className='trend_icon'>
-                        <GiCornerFlag />
-                    </div>
-                    <span>Top of the world</span>
-                    <div className='horizontal_lineIcon'></div>
-            
-                </div>
+
+                </div>)}
+                
+                
             </div>
+
+            <div className='right_arrow'>
+                <span style={button}><MdKeyboardArrowRight/></span>
+                <span style={filter}><IoMdSwitch /> fliter</span>
+            </div>
+
         </nav>
 
         <div className='horizontal_lineNav'></div>

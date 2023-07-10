@@ -1,13 +1,13 @@
 import DisplayGrid from "../shared-components/DisplayGrid"
 import Footer from "../shared-components/Footer"
 import Header from "../shared-components/Header"
-import TreandDisplay from "../shared-components/TreandDisplay"
+import PriceToggle from "../shared-components/PriceToggle"
 
 const Home = () => {
   return (
     <div>
         <Header />
-        <TreandDisplay />
+        <PriceToggle />
         <DisplayGrid />
         <Footer />
     </div>

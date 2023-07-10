@@ -117,7 +117,27 @@
 
 .nav {
     padding: 0 40px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.left_arrow {
+    position: absolute;
+    left: 0;
+    padding: 34.1px 0 34.1px 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 25px 0 10px rgb(255, 255, 255);
+}
+
+.right_arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    padding: 25px 0 20px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -25px 0 10px rgb(255, 255, 255);
+    align-items: center;
 }
 
 .trend_nav {
@@ -142,6 +162,7 @@
     align-items: flex-end;
     color: #000000;
     border-bottom: 2px solid #dddddd;
+    cursor: pointer;
 }
 
 .active {
@@ -153,11 +174,8 @@
 }
 
 .active:hover {
-    height: 78px;
-    text-align: center;
-    align-items: flex-end;
-    color: #000000;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #000000; 
+    cursor: context-menu;
 }
 
 .trend_icon {

@@ -1,6 +1,6 @@
 import {  MdDone } from 'react-icons/md';
 
-const TreandDisplay = () => {
+const PriceToggle = () => {
 
   const toggleBox = {
     margin: "30px 0",
@@ -16,7 +16,6 @@ const TreandDisplay = () => {
     borderRadius: "15px",
     height: "66px",
     justifyContent: "space-between",
-    // backgroundColor: "red"
   }
 
   const toggleBoxText = {
@@ -71,4 +70,4 @@ const TreandDisplay = () => {
 
   )
 }
-export default TreandDisplay
+export default PriceToggle

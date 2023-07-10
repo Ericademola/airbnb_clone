@@ -1,51 +1,43 @@
+import './DisplayGrid.css';
+import listings from '../db/db.json';
+import { Listing } from '../interfaces/listing';
+import { MdOutlineStar } from 'react-icons/md';
+
+
+
 const DisplayGrid = () => {
 
-    const trendGridContainer = {
-        display: "grid",
-        gap: "30px 21px",
-        gridTemplateColumns: "auto auto auto auto",
-        backgroundColor: "#2196F3",
-        padding: "0 40px",
-        overflow: "auto",
-    }
+    // const picked = listings.forEach(
+    //     function() {
+    //         const fullStory = Object.keys(cost);
+    //     }
+    // )
 
-    const gridItem = {
-        backgroundColor: "rgba(255, 255, 255, 0.8)",
-        border: "1px solid rgba(0, 0, 0, 0.8)",
-        fontSize: "30px",
-        height: "420px",
-    }
-
-    const pictures = {
-        backgroundColor: "red",
-        width: "100%",
-        height: "300px",
-        borderRadius: "20px"
-    }
+    // const fullStory = listings.find((story: { id: number; }) =>
+    // story.id == "k"
+    // );
 
   return (
-    <div>
-        <div style={trendGridContainer}>
-            <div style={gridItem}>
-                <div style={pictures}></div>
-                <div><small>gfd</small></div>
-                <div><small>gfd</small></div>
-                <div><small>hgf</small></div>
-                <div><small>gfd</small></div>
-            </div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
-            <div style={gridItem}></div>
+    <div >
+        <div className='trendGridContainer'>
+
+            {listings.map((list:Listing) => <div key={list.id}>
+
+                <div className='gridItem'>
+                    <div className='pictures'>
+                        <img src={`images/${list.images.rooms}`} alt={list.name} />
+                    </div>
+                    <div style={{justifyContent: "space-between", display: "flex"}}>
+                        <span>{list.name}</span> <span><MdOutlineStar /> {list.rating}</span>
+                    </div>
+                    <div><small>stay with {list.host}</small></div>
+                    <div><small>{list.date}</small></div>
+                    <div><small>${list.cost} night</small></div>
+                </div>
+
+            </div>)}
         </div>
+
     </div>
   )
 }
