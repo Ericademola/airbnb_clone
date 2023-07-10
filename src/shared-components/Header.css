@@ -1,0 +1,117 @@
+.top {
+    display: flex;
+    margin: 0 3% 0 1.5%;
+    border-bottom: 1px soild #dddddd;
+}
+
+.logo_section {
+    width: 294px;
+}
+
+.top img {
+    height: 80px;
+    width: 130px;
+    margin-left: 2.5%;
+}
+
+.top .header_select {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    width: 360px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    justify-content: right;
+    box-shadow: 0 1.5px 5px #dddddd;
+}
+
+.top .header_select:hover {
+    box-shadow: 0 3px 5px #dddddd;
+}
+
+.header_select button {
+    margin: 0 16px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #3d3d3d;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header_select .vertical_line {
+    height: 25px;
+    width: 1.2px;
+    background-color: #dddddd;
+}
+
+.search {
+    padding: 6px 7px 3px 7px;
+    border-radius: 45px;
+    background-color: #ff385c;
+    text-align: center;
+    margin: 7px 7px 7px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top_right {
+    width: 294px;
+    display: flex;
+    margin-right: 0;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+
+.airbnb_home {
+    color: #222222;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.airbnb_home:hover {
+    background-color: #f1f2f2;
+    padding: 11px 16px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #222222;
+}
+
+.airbnb_world {
+    padding: 11px 14px;
+    border-radius: 40px;
+    color: #222222;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.airbnb_world:hover {
+    background-color: #f1f2f2;
+    padding: 11px 14px;
+    border-radius: 40px;
+    color: #222222;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.profile_button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 28px;
+    padding: 3px 0px; 
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.profile_button:hover {
+    box-shadow: 0 3px 5px #dddddd;
+}
+
+.horizontal_line {
+    height: 1px;
+    background-color: #dddddd;
+}
