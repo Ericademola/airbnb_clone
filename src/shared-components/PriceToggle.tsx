@@ -37,6 +37,7 @@ const PriceToggle = () => {
     width: "30px",
     borderRadius: "66px",
     border: "none",
+    fontSize: "14px",
   }
 
   return (

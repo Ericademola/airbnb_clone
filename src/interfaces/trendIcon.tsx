@@ -1,5 +1,7 @@
+import { ReactElement } from "react";
+
 export interface Icon {
     id: number;
-    icon: any;
+    icon: ReactElement<string, string>;
     label:  string;
 }

@@ -25,7 +25,7 @@ const DisplayGrid = () => {
 
                 <div className='gridItem'>
                     <div className='pictures'>
-                        <img src={`images/${list.images.rooms}`} alt={list.name} />
+                        <img src={`images/${list.images.Rooms}`} alt={list.name} />
                     </div>
                     <div style={{justifyContent: "space-between", display: "flex"}}>
                         <span>{list.name}</span> <span><MdOutlineStar /> {list.rating}</span>

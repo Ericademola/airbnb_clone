@@ -43,7 +43,7 @@ const trends: Icon[] = [
     {
         id: 7,
         icon: <TbBuildingSkyscraper />,
-        label: "Iconic Cities"
+        label: "Iconic_Cities"
     },
     {
         id: 8,
@@ -83,12 +83,12 @@ const trends: Icon[] = [
     {
         id: 15,
         icon: <TbChefHat />,
-        label: "Chef's kitchens"
+        label: "Chef_kitchens"
     },
     {
         id: 16,
         icon: <AiOutlineCoffee />,
-        label: "Bed & breakfasts"
+        label: "Bed_breakfasts"
     },
     {
         id: 17,
@@ -107,12 +107,12 @@ const trends: Icon[] = [
     {
         id: 20,
         icon: <PiSwimmingPool />,
-        label: "Amazing pools"
+        label: "Amazing_pools"
     },
     {
         id: 21,
         icon: <GiCornerFlag />,
-        label: "Top of the world"
+        label: "Top_of_the_world"
     },
 ]
 
