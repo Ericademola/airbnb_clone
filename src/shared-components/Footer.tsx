@@ -5,9 +5,6 @@ import { TiTimes } from 'react-icons/ti';
 import { PiDot, PiCopyrightLight } from 'react-icons/pi';
 
 
-
-
-
 const Footer = () => {
   return (
     <div className='footer_line'>

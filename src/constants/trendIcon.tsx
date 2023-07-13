@@ -5,15 +5,13 @@ import { TbSailboat, TbChefHat, TbBeach, TbCamper } from 'react-icons/tb';
 import { AiOutlineCoffee } from 'react-icons/ai';
 import { IoIosSnow } from 'react-icons/io';
 import { TbBuildingSkyscraper } from 'react-icons/tb';
-
-
 import { Icon } from '../interfaces/trendIcon';
 
 const trends: Icon[] = [
     {
         id: 1,
-        icon: <PiFire />,
-        label: "Trending"
+        icon: <MdOutlineBedroomParent />,
+        label: "Rooms"
     },
     {
         id:2,
@@ -52,8 +50,8 @@ const trends: Icon[] = [
     },
     {
         id: 9,
-        icon: <MdOutlineBedroomParent />,
-        label: "Rooms"
+        icon: <PiFire />,
+        label: "Trending"
     },
     {
         id: 10,

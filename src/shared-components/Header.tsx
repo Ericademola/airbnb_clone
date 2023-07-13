@@ -4,20 +4,22 @@ import { TbWorld } from 'react-icons/tb';
 import { CgMenu } from 'react-icons/cg';
 import { IoMdContact } from 'react-icons/io';
 import { BiSearchAlt2 } from 'react-icons/bi';
-import Nav from './Nav';
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
 
   return (
-    <div>
+    <div className='top_up'>
 
         <header className='top'>
 
             <div className='logo_section'>
-                <a href="">
-                    <img src={company} alt="logo-and-name" />
-                </a>
+                <Link to='/'>
+                    <a href="">
+                        <img src={company} alt="logo-and-name" />
+                    </a>
+                </Link>
             </div>
 
             <div className='header_select'>
@@ -48,11 +50,9 @@ const Header = () => {
                 </button>
             </div>
 
+            <div className='horizontal_line'></div>
+
         </header>
-
-        <div className='horizontal_line'></div>
-
-        <Nav />
 
     </div>
   )
