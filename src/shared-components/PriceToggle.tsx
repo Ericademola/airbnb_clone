@@ -1,51 +1,36 @@
 import {  MdDone } from 'react-icons/md';
+import './PriceToggle.css';
+import { useState } from 'react';
+
 
 const PriceToggle = () => {
 
-  const toggleBox = {
-    margin: "30px 0",
-    alignItems: "center",
+  const [onToggle, setOnToggle] = useState<boolean>(false);
+  const [checkMoveNext, setCheckMoveNext] = useState<boolean>(false);
+  const [showMark, setShowMark] = useState<boolean>(false);
+
+
+
+  const toggleOn = () => {
+
+    setShowMark(!showMark)
+
+    setOnToggle(true);
+    document.getElementById("toggleBoxChange")?.classList.toggle('toggleBoxChange');
+
+    setCheckMoveNext(prevState => {
+      return !prevState
+    })
+
   }
 
-  const toggleBoxContent = {
-    display: "flex",
-    margin: "auto",
-    width: "622.5px",
-    alignItems: "center",
-    border: "1px solid #ddd",
-    borderRadius: "15px",
-    height: "66px",
-    justifyContent: "space-between",
-  }
-
-  const toggleBoxText = {
-    padding: "20px",
-    display: "flex",
-  }
-
-  const toggleBoxToggle ={
-    marginRight: "20px",
-    width: "50px",
-    backgroundColor: "#b0b0b0",
-    borderRadius: "55px",
-    border: "1px solid #ddd",
-    padding: "2px 2px", 
-  }
-
-  const button ={
-    height: "30px",
-    width: "30px",
-    borderRadius: "66px",
-    border: "none",
-    fontSize: "14px",
-  }
 
   return (
       
-    <div style={toggleBox}>
+    <div className='toggleBox'>
 
-      <div style={toggleBoxContent}>
-        <div style={toggleBoxText}>
+      <div className='toggleBoxContent'>
+        <div className='toggleBoxText'>
           <p>
             Display total price
           </p>
@@ -62,8 +47,12 @@ const PriceToggle = () => {
             Includes all fees, before taxes
           </p>
         </div>
-        <div style={toggleBoxToggle}>
-          <button style={button}><MdDone/></button>
+
+        <div onAnimationEnd={toggleOn}
+        className=  'toggleBoxToggle' id="toggleBoxChange">
+
+          <button className='button' onClick={toggleOn}>{showMark ? <MdDone/> : ''}</button>
+
         </div>
       </div>
 
@@ -72,3 +61,5 @@ const PriceToggle = () => {
   )
 }
 export default PriceToggle
+
+// showMark ? 'buttonMove' :

@@ -3,51 +3,88 @@ import { IoMdSwitch } from 'react-icons/io';
 import trends from '../constants/trendIcon';
 import { Icon } from '../interfaces/trendIcon';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
+import { useEffect, useState } from 'react';
+import { Link, useLocation, useParams } from 'react-router-dom';
+import { BiSlider } from 'react-icons/bi';
 
 
 const Nav = () => {
 
-    const showMoreTrend = () => {
-        console.log('hi');
-        
+    const [leftArrow, setLeftArrow] = useState<boolean>(false);
+    const [OtherTrends, setOtherTrends] = useState<Icon[] | undefined>(trends.slice(0, 14));
+    const [checkMoveNext, setCheckMoveNext] = useState<boolean>(false);
+    const [checkMovePrev, setCheckMovePrev] = useState<boolean>(false);
+
+
+    const random = Math.random() * 10;
+
+    const nextTrend = () => {
+
+        if (random > 7) {
+            setOtherTrends(trends.slice(-15, -1))
+        } else {setOtherTrends(trends.slice(random))}
+        setLeftArrow(true);
+
+        setCheckMoveNext(prevState => {
+            return !prevState
+        })
+
     }
 
-  return (
-    <div>
-        
-         <nav className='nav'>
 
-            <div className='left_arrow'>
-                <span className='button'><MdKeyboardArrowLeft/></span>
-            </div>
+    const prevTrend = () => {
+        if (random > 7) {
+            setOtherTrends(trends.slice(0, 15))
+        } else {setOtherTrends(trends.slice(random))}
 
-            <div className='trend_nav'>
+        setCheckMovePrev(prevState => {
+            return !prevState
+        })
+    }
 
-                {trends.map((trend:Icon) => <div key={trend.id}>
+    return (
+        <div className='nav_top'>
+            
+            <nav className='nav'>
 
-                    <div className='trend_filters'>
-                        <div className='trend_icon'>
-                            {trend.icon}
-                        </div>    
-                        <span className='text'>{trend.label}</span>
-                        <div className='horizontal_lineIcon'></div>
+                { leftArrow &&
+                    <div className='left_arrow'>
+                        <span className='button' onClick={prevTrend}><MdKeyboardArrowLeft/></span>
                     </div>
+                }
 
-                </div>)}
-                
-                
-            </div>
+                <div onAnimationEnd={prevTrend}
+                className={checkMoveNext ? ('backward' || 'forward'): 'trend_nav'} id='slider'>
 
-            <div className='right_arrow'>
-                <span className='button' onClick={showMoreTrend}><MdKeyboardArrowRight/></span>
-                <span className='filter'><IoMdSwitch /> fliter</span>
-            </div>
+                    {(OtherTrends ?? trends).map((trend:Icon) => <div key={trend.id}>
 
-        </nav>
+                        <Link to={`/Trendings/${trend.label}`} state={`${trend.label}`}>
 
-        <div className='horizontal_lineNav'></div>
+                            <div className='trend_filters'>
+                                <div className='trend_icon'>
+                                    {trend.icon}
+                                </div>    
+                                <span className='text'>{trend.label}</span>
+                                <div className='horizontal_lineIcon'></div>
+                            </div>
 
-    </div>
-  )
+                        </Link>
+
+                    </div>)}
+           
+                    
+                </div>
+
+                <div className='right_arrow'>
+                    <span className='button' onClick={nextTrend}><MdKeyboardArrowRight/></span>
+                    <span className='filter'><IoMdSwitch /> fliter</span>
+                </div>
+
+            </nav>
+
+            <div className='horizontal_lineNav'></div>
+
+        </div>
+    )
 }
 export default Nav

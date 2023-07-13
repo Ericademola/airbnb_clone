@@ -15,7 +15,7 @@
             "Barns":"60c1fde2-8d7c-41c1-8b40-803e7ccadb27.webp"
         },
         "distance": "Ecuador",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Top_of_the_world","Rooms","Design","Tropical","Cabins","Barns"]
     },
     {
         "id": 2,
@@ -33,7 +33,7 @@
             "Design":"35140864-97c8-4f8f-905f-edaf620c71b0.webp"
         },
         "distance": "Spain",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Amazing_pools","Caves","Rooms","Bed_breakfasts","Tropical","Design"]
     },
     {
         "id": 3,
@@ -51,7 +51,7 @@
             "Design":"84248ff0-1a34-479b-8308-094bc540210e (1).webp"
         },
         "distance": "USA",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Mansions","Amazing_pools","Rooms","Tropical","Top_of_the_world","Design"]
     },
     {
         "id": 4,
@@ -69,7 +69,7 @@
             "Barns":"da0e528a-1e3d-4a1e-bcfe-cc5df7b95011.webp"
         },
         "distance": "Morocco",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Chef_kitchens","Rooms","Barns","Bed_breakfasts","Top_of_the_world","Cabins"]
     },
     {
         "id": 5,
@@ -87,7 +87,7 @@
             "Barns":"8b17b2d9-167d-4832-ae6c-8a49eaee3ec5.webp"
         },
         "distance": "Eypgt",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Bed_breakfasts","Top_of_the_world","Design","Rooms","Amazing_pools","Barns"]
     },
     {
         "id": 6,
@@ -105,7 +105,7 @@
             "Amazing_pools":"4808e62f-0e8d-4f1a-ae9f-ef6b75cc40b0.webp"
         },
         "distance": "Morocco",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Chef_kitchens","Bed_breakfasts","Design","Rooms","Tropical","Amazing_pools"]
     },
     {
         "id": 7,
@@ -123,7 +123,7 @@
             "Top_of_the_world":"bbe41c76-66b0-4075-bc48-22a03a714cfa.webp"
         },
         "distance": "Turkey",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Chef_kitchens","Bed_breakfasts","Design","Cabins","Rooms","Top_of_the_world"]
     },
     {
         "id": 8,
@@ -141,7 +141,7 @@
             "Amazing_pools":"e56c9c04-dc46-4f92-9018-c09ca519494d.webp"
         },
         "distance": "Morocco",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Chef_kitchens","Bed_breakfastAmazing_poolss","Design","Rooms","Tropical","Amazing_pools"]
     },
 
 
@@ -163,7 +163,7 @@
             "New":"e3beaf52-13ab-44ed-bbfa-56ccf43bab98.webp"
         },
         "distance": "Sweden",
-        "trend": ["chef","breakfast","design","windmill","beach","new"]
+        "trend": ["Chef_kitchens","Bed_breakfasts","Design","Windmills","Beach","New"]
     },
     {
         "id": 10,
@@ -181,7 +181,7 @@
             "Bed_breakfasts":"035957d5-9628-400b-8faa-0d0fb77e5be8.webp"
         },
         "distance": "Italy",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Chef_kitchens","Top_of_the_world","Design","Campers","Beach","Bed_breakfasts"]
     },
     {
         "id": 11,
@@ -199,7 +199,7 @@
             "Amazing_pools":"16907e24-b7b9-4382-8259-06d2c1525461.webp"
         },
         "distance": "Portual",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Chef_kitchens","Bed_breakfasts","Design","Cabins","Beach","Amazing_pools"]
     },
     {
         "id": 12,
@@ -217,7 +217,7 @@
             "Top_of_the_world":"821bc2b1-152a-43fb-98da-538c2fb95dbf.webp"
         },
         "distance": "Portual",
-        "trend": ["chef","breakfast","design","monutain","campers","beach"]
+        "trend": ["Chef_kitchens","Bed_breakfasts","Design","Cabins","Beach","Top_of_the_world"]
     }
 ]
 

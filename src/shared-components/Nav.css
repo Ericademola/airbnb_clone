@@ -1,24 +1,33 @@
+.nav_top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 13.1%;
+    margin-top: 25px;
+}
+
 .nav {
     padding: 0 40px;
     overflow: hidden;
     position: relative;
+    background-color: rgb(255, 255, 255);
 }
 
 .left_arrow {
+    margin-top: 10px;
     position: absolute;
     left: 0;
-    padding: 34.1px 0 34.1px 40px;
+    padding: 14.1px 0 10px 40px;
     background-color: rgb(255, 255, 255);
     box-shadow: 25px 0 10px rgb(255, 255, 255);
-    display: none;
 }
 
 .right_arrow {
+    margin-top: 2px;
     position: absolute;
     right: 0;
     top: 0;
     display: flex;
-    padding: 25px 0 20px 0;
+    padding: 10px 0 5px 0;
     background-color: rgb(255, 255, 255);
     box-shadow: -25px 0 10px rgb(255, 255, 255);
     align-items: center;
@@ -30,15 +39,17 @@
     border: 1px solid #ddd;
     font-size: 20px;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .button:hover {
-    padding: 3px 6px;
+    padding: 2px 5px;
     border-radius: 66px;
     border: 1px solid #ddd;
-    font-size: 20px;
+    font-size: 21px;
     cursor: pointer;
     box-shadow: 0 0 10px #dddddd;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .filter {
@@ -55,32 +66,88 @@
 }
 
 .trend_nav {
-    height: 98px;
+    height: 70px;
     display: flex;
     width: max-content;
     gap: 35px;
     align-items: flex-end;
 }
 
+.trend_nav a {
+    text-decoration: none;
+}
+
+.backward {
+    height: 70px;
+    display: flex;
+    width: max-content;
+    gap: 35px;
+    align-items: flex-end;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-name: move-horizontalBackward;
+}
+
+.backward a {
+    text-decoration: none;
+}
+
+@keyframes move-horizontalBackward {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+}
+
+.forward {
+    height: 70px;
+    display: flex;
+    width: max-content;
+    gap: 35px;
+    align-items: flex-end;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-name: move-horizontalForward;
+}
+
+.forward a {
+    text-decoration: none;
+}
+
+@keyframes move-horizontalForward {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
+
 .trend_filters {
-    height: 78px;
+    height: 60px;
     text-align: center;
     align-items: flex-end;
     color: #717171;
     border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 8px;
 }
 
 .trend_filters:hover {
-    height: 78px;
+    height: 60px;
     text-align: center;
     align-items: flex-end;
     color: #000000;
     border-bottom: 2px solid #dddddd;
     cursor: pointer;
+    padding-top: 10px;
 }
 
 .active {
-    height: 78px;
+    height: 60px;
     text-align: center;
     align-items: flex-end;
     color: #000000;
@@ -88,16 +155,22 @@
 }
 
 .active:hover {
+    height: 60px;
+    text-align: center;
+    align-items: flex-end;
+    color: #000000;
     border-bottom: 2px solid #000000; 
     cursor: context-menu;
 }
 
 .trend_icon {
-    margin: 10px 0 4px;
+    padding-top: 8px;
     font-size: 24px;
 }
 
 .horizontal_lineNav {
-    border-top: .3px solid #dddddd;
+    height: 5px;
+    background-color: #dddddd;
     box-shadow: 0 1.5px 4px #c1c0c0;
+    mix-blend-mode: difference;
 } 

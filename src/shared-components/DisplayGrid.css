@@ -2,7 +2,7 @@
     display: grid;
     gap: 30px 21px;
     grid-template-columns: auto auto auto auto;
-    background-color: #2196F3;
+    /* background-color: #2196F3; */
     padding: 0 40px;
 
 }
@@ -17,10 +17,23 @@
     background-color: red;
     width: 100%;
     height: 300px;
-    border-radius: 20px
+    border-radius: 20px;
+    position: relative;
 }
 
 .pictures img {
     width: 100%;
     height: 100%;
+}
+
+.left_pic {
+    position: absolute;
+    left: 2%;
+    top: 40%;
+}
+
+.right_pic {
+    position: absolute;
+    right: 2%;
+    top: 40%;
 }
