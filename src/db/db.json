@@ -6,14 +6,14 @@
         "host": "Alex",
         "date": "Jul 16-21",
         "cost": 114,
-        "images": {
-            "Top_of_the_world": "40961690-1a10-40ea-910f-c3f836b01250.webp", 
-            "Rooms": "83dc5d79-113b-413f-a596-fcb72b60f0d5.webp",
-            "Design": "082485ca-b801-4f51-87aa-84e682871df9.webp",
-            "Tropical": "2cf98ae7-d01a-4beb-bb16-019de0ae6930.webp",
-            "Cabins": "253e0c2c-0f58-43b1-9721-18f5827b43d1.webp",
-            "Barns":"60c1fde2-8d7c-41c1-8b40-803e7ccadb27.webp"
-        },
+        "images": [
+            {"Top_of_the_world": "40961690-1a10-40ea-910f-c3f836b01250.webp"}, 
+            {"Rooms": "83dc5d79-113b-413f-a596-fcb72b60f0d5.webp"},
+            {"Design": "082485ca-b801-4f51-87aa-84e682871df9.webp"},
+            {"Tropical": "2cf98ae7-d01a-4beb-bb16-019de0ae6930.webp"},
+            {"Cabins": "253e0c2c-0f58-43b1-9721-18f5827b43d1.webp"},
+            {"Barns":"60c1fde2-8d7c-41c1-8b40-803e7ccadb27.webp"}
+        ],
         "distance": "Ecuador",
         "trend": ["Top_of_the_world","Rooms","Design","Tropical","Cabins","Barns"]
     },
@@ -24,14 +24,14 @@
         "host": "Finca Isabel",
         "date": "Oct 16-21",
         "cost": 98,
-        "images": {
-            "Amazing_pools": "59634faf-abe5-45d7-93b1-d7331d646454.webp", 
-            "Caves": "29e93fb7-64e9-4f36-80fe-d7c04b9f3be5.webp",
-            "Rooms": "31f5b2a8-ada1-4ada-953f-b2bf9afe0b0c.jpg",
-            "Tropical": "2872fde3-59f3-41a8-9d9c-3e8d394c4bae.webp",
-            "Bed_breakfasts": "9ab6b5cf-2837-4f19-b169-d05668361254.webp",
-            "Design":"35140864-97c8-4f8f-905f-edaf620c71b0.webp"
-        },
+        "images": [
+            {"Amazing_pools": "59634faf-abe5-45d7-93b1-d7331d646454.webp"}, 
+            {"Caves": "29e93fb7-64e9-4f36-80fe-d7c04b9f3be5.webp"},
+            {"Rooms": "31f5b2a8-ada1-4ada-953f-b2bf9afe0b0c.jpg"},
+            {"Tropical": "2872fde3-59f3-41a8-9d9c-3e8d394c4bae.webp"},
+            {"Bed_breakfasts": "9ab6b5cf-2837-4f19-b169-d05668361254.webp"},
+            {"Design":"35140864-97c8-4f8f-905f-edaf620c71b0.webp"}
+        ],
         "distance": "Spain",
         "trend": ["Amazing_pools","Caves","Rooms","Bed_breakfasts","Tropical","Design"]
     },
@@ -42,14 +42,14 @@
         "host": "Green Jay",
         "date": "Aug 1-6",
         "cost": 3724,
-        "images": {
-            "Mansions": "4edf42b0-2bf9-41a3-b23b-2791e0f16af1.webp", 
-            "Amazing_pools": "3df50ac4-5438-4593-a72c-958ac143d6b6.webp",
-            "Rooms": "05046cb6-4b44-4140-8182-a8416e4d338f.webp",
-            "Tropical": "84248ff0-1a34-479b-8308-094bc540210e.webp",
-            "Top_of_the_world": "0c735027-6c0a-437d-98f7-f44d47fe1d91.webp",
-            "Design":"84248ff0-1a34-479b-8308-094bc540210e (1).webp"
-        },
+        "images": [
+            {"Mansions": "4edf42b0-2bf9-41a3-b23b-2791e0f16af1.webp"}, 
+            {"Amazing_pools": "3df50ac4-5438-4593-a72c-958ac143d6b6.webp"},
+            {"Rooms": "05046cb6-4b44-4140-8182-a8416e4d338f.webp"},
+            {"Tropical": "84248ff0-1a34-479b-8308-094bc540210e.webp"},
+            {"Top_of_the_world": "0c735027-6c0a-437d-98f7-f44d47fe1d91.webp"},
+            {"Design":"84248ff0-1a34-479b-8308-094bc540210e (1).webp"}
+        ],
         "distance": "USA",
         "trend": ["Mansions","Amazing_pools","Rooms","Tropical","Top_of_the_world","Design"]
     },
@@ -60,14 +60,14 @@
         "host": "Samira",
         "date": "Aug 28-sept 2",
         "cost": 61,
-        "images": {
-            "Chef_kitchens": "b2a80176-4323-404e-aafe-443731e9e522.webp", 
-            "Rooms": "a065af2c-9234-4c1b-8086-2140446597ca.webp",
-            "Bed_breakfasts": "6f60be41-1d20-4451-8d6e-beaa0eefa1c2.webp",
-            "Top_of_the_world": "1f6cbc0c-f3de-4521-868f-4416d32abe6a.webp",
-            "Cabins": "919efcde-3f23-4dea-a50b-63a9421ad4ed.webp",
-            "Barns":"da0e528a-1e3d-4a1e-bcfe-cc5df7b95011.webp"
-        },
+        "images": [
+            {"Chef_kitchens": "b2a80176-4323-404e-aafe-443731e9e522.webp"}, 
+            {"Rooms": "a065af2c-9234-4c1b-8086-2140446597ca.webp"},
+            {"Bed_breakfasts": "6f60be41-1d20-4451-8d6e-beaa0eefa1c2.webp"},
+            {"Top_of_the_world": "1f6cbc0c-f3de-4521-868f-4416d32abe6a.webp"},
+            {"Cabins": "919efcde-3f23-4dea-a50b-63a9421ad4ed.webp"},
+            {"Barns":"da0e528a-1e3d-4a1e-bcfe-cc5df7b95011.webp"}
+        ],
         "distance": "Morocco",
         "trend": ["Chef_kitchens","Rooms","Barns","Bed_breakfasts","Top_of_the_world","Cabins"]
     },
@@ -78,14 +78,14 @@
         "host": "Riad",
         "date": "Sept 6-13",
         "cost": 98,
-        "images": {
-            "Bed_breakfasts": "15bf8384-3a1c-4e02-9a2d-4710f9712d78.webp", 
-            "Top_of_the_world": "7acee5cf-06a7-4dfb-876b-fb875e50c649.webp",
-            "Design": "752f0da0-02c1-4677-9fce-6b00d0ebd4b5.webp",
-            "Rooms": "868c8cf9-8053-4d84-bb96-5a944a335019.webp",
-            "Amazing_pools": "25b919f1-d564-4e2d-a0ff-8aacf46a8871.webp",
-            "Barns":"8b17b2d9-167d-4832-ae6c-8a49eaee3ec5.webp"
-        },
+        "images": [
+            {"Bed_breakfasts": "15bf8384-3a1c-4e02-9a2d-4710f9712d78.webp"}, 
+            {"Top_of_the_world": "7acee5cf-06a7-4dfb-876b-fb875e50c649.webp"},
+            {"Design": "752f0da0-02c1-4677-9fce-6b00d0ebd4b5.webp"},
+            {"Rooms": "868c8cf9-8053-4d84-bb96-5a944a335019.webp"},
+            {"Amazing_pools": "25b919f1-d564-4e2d-a0ff-8aacf46a8871.webp"},
+            {"Barns":"8b17b2d9-167d-4832-ae6c-8a49eaee3ec5.webp"}
+        ],
         "distance": "Eypgt",
         "trend": ["Bed_breakfasts","Top_of_the_world","Design","Rooms","Amazing_pools","Barns"]
     },
@@ -96,14 +96,14 @@
         "host": "Matham",
         "date": "Jun 2-17",
         "cost": 411,
-        "images": {
-            "Chef_kitchens": "4aa330cc-a2ef-4ec2-a129-a8ba89a325e4.webp", 
-            "Bed_breakfasts": "38d7ee74-6624-4285-a5fb-36064885f582.webp",
-            "Design": "89092cd5-fa36-4d95-9688-1766164f6eea.webp",
-            "Rooms": "",
-            "Tropical": "c95da9f4-c7dd-49f7-a63c-1523bc8a77ec.webp",
-            "Amazing_pools":"4808e62f-0e8d-4f1a-ae9f-ef6b75cc40b0.webp"
-        },
+        "images": [
+            {"Chef_kitchens": "4aa330cc-a2ef-4ec2-a129-a8ba89a325e4.webp"}, 
+            {"Bed_breakfasts": "38d7ee74-6624-4285-a5fb-36064885f582.webp"},
+            {"Design": "89092cd5-fa36-4d95-9688-1766164f6eea.webp"},
+            {"Rooms": ""},
+            {"Tropical": "c95da9f4-c7dd-49f7-a63c-1523bc8a77ec.webp"},
+            {"Amazing_pools":"4808e62f-0e8d-4f1a-ae9f-ef6b75cc40b0.webp"}
+        ],
         "distance": "Morocco",
         "trend": ["Chef_kitchens","Bed_breakfasts","Design","Rooms","Tropical","Amazing_pools"]
     },
@@ -114,14 +114,14 @@
         "host": "Ayo",
         "date": "Feb 10-15",
         "cost": 84,
-        "images": {
-            "Chef_kitchens": "b0075da7-70fb-4ebf-8f97-cab80a7e14ac.jpeg", 
-            "Bed_breakfasts": "01fdcd4b-8670-450f-a1e5-e116b741a508.webp",
-            "Design": "6528472c-bdf7-4517-a638-7f8c0d9b2a50.webp",
-            "Cabins": "7ecedca5-d996-4c4e-88fa-e93e25c07b3b.webp",
-            "Rooms": "",
-            "Top_of_the_world":"bbe41c76-66b0-4075-bc48-22a03a714cfa.webp"
-        },
+        "images": [
+            {"Chef_kitchens": "b0075da7-70fb-4ebf-8f97-cab80a7e14ac.jpeg"}, 
+            {"Bed_breakfasts": "01fdcd4b-8670-450f-a1e5-e116b741a508.webp"},
+            {"Design": "6528472c-bdf7-4517-a638-7f8c0d9b2a50.webp"},
+            {"Cabins": "7ecedca5-d996-4c4e-88fa-e93e25c07b3b.webp"},
+            {"Rooms": ""},
+            {"Top_of_the_world":"bbe41c76-66b0-4075-bc48-22a03a714cfa.webp"}
+        ],
         "distance": "Turkey",
         "trend": ["Chef_kitchens","Bed_breakfasts","Design","Cabins","Rooms","Top_of_the_world"]
     },
@@ -132,14 +132,14 @@
         "host": "Yan Cedric",
         "date": "Jul 2-17",
         "cost": 41,
-        "images": {
-            "Chef_kitchens": "cc9077b1-6f72-45fb-9a37-4afbfb0cdc43.jpg", 
-            "Bed_breakfasts": "3148781f-1710-4a90-81fa-278b76359b60.webp",
-            "Design": "0ac0c677-6112-4b14-996e-5ed1f9ce78e5.jpeg",
-            "Rooms": "",
-            "Tropical": "5c6f92f2-cf23-4d10-8e9f-32d0e045daf5.jpeg",
-            "Amazing_pools":"e56c9c04-dc46-4f92-9018-c09ca519494d.webp"
-        },
+        "images": [
+            {"Chef_kitchens": "cc9077b1-6f72-45fb-9a37-4afbfb0cdc43.jpg"}, 
+            {"Bed_breakfasts": "3148781f-1710-4a90-81fa-278b76359b60.webp"},
+            {"Design": "0ac0c677-6112-4b14-996e-5ed1f9ce78e5.jpeg"},
+            {"Rooms": ""},
+            {"Tropical": "5c6f92f2-cf23-4d10-8e9f-32d0e045daf5.jpeg"},
+            {"Amazing_pools":"e56c9c04-dc46-4f92-9018-c09ca519494d.webp"}
+        ],
         "distance": "Morocco",
         "trend": ["Chef_kitchens","Bed_breakfastAmazing_poolss","Design","Rooms","Tropical","Amazing_pools"]
     },
@@ -154,14 +154,14 @@
         "host": "Henry",
         "date": "Dec 18-28",
         "cost": 564,
-        "images": {
-            "Chef_kitchens": "8cac809e-37ce-47a6-9b14-f05804370f6f.webp", 
-            "Bed_breakfasts": "96a50706-b9d8-4a5c-a3b5-197141e9e2e8.webp",
-            "Design": "bc151d50-d391-4be1-a1cb-f91b8ff5520a.webp",
-            "Windmills": "10d2c21f-84c2-46c5-b20b-b51d1c2c971a.webp",
-            "Beach": "bbe41c76-66b0-4075-bc48-22a03a714cfa.webp",
-            "New":"e3beaf52-13ab-44ed-bbfa-56ccf43bab98.webp"
-        },
+        "images": [
+            {"Chef_kitchens": "8cac809e-37ce-47a6-9b14-f05804370f6f.webp"}, 
+            {"Bed_breakfasts": "96a50706-b9d8-4a5c-a3b5-197141e9e2e8.webp"},
+            {"Design": "bc151d50-d391-4be1-a1cb-f91b8ff5520a.webp"},
+            {"Windmills": "10d2c21f-84c2-46c5-b20b-b51d1c2c971a.webp"},
+            {"Beach": "bbe41c76-66b0-4075-bc48-22a03a714cfa.webp"},
+            {"New":"e3beaf52-13ab-44ed-bbfa-56ccf43bab98.webp"}
+        ],
         "distance": "Sweden",
         "trend": ["Chef_kitchens","Bed_breakfasts","Design","Windmills","Beach","New"]
     },
@@ -172,14 +172,14 @@
         "host": "Alonso",
         "date": "Dec 18-28",
         "cost": 124,
-        "images": {
-            "Chef_kitchens": "9ed2ba7c-4ea0-495e-a6b4-e3efec15f5a3.jpg", 
-            "Top_of_the_world": "afb59872-6cfe-4194-8340-ac29552d2e2c.jpeg",
-            "Design": "134c9bf1-bbed-486f-9bbb-f29a579e8034.jpg",
-            "Campers": "060c8d0c-90a7-42fa-98ec-e53e874d4b71.webp",
-            "Beach": "db17fce1-4ad0-45d8-8d7b-ba5ccdfe770c.webp",
-            "Bed_breakfasts":"035957d5-9628-400b-8faa-0d0fb77e5be8.webp"
-        },
+        "images": [
+            {"Chef_kitchens": "9ed2ba7c-4ea0-495e-a6b4-e3efec15f5a3.jpg"}, 
+            {"Top_of_the_world": "afb59872-6cfe-4194-8340-ac29552d2e2c.jpeg"},
+            {"Design": "134c9bf1-bbed-486f-9bbb-f29a579e8034.jpg"},
+            {"Campers": "060c8d0c-90a7-42fa-98ec-e53e874d4b71.webp"},
+            {"Beach": "db17fce1-4ad0-45d8-8d7b-ba5ccdfe770c.webp"},
+            {"Bed_breakfasts":"035957d5-9628-400b-8faa-0d0fb77e5be8.webp"}
+        ],
         "distance": "Italy",
         "trend": ["Chef_kitchens","Top_of_the_world","Design","Campers","Beach","Bed_breakfasts"]
     },
@@ -190,14 +190,14 @@
         "host": "Henry",
         "date": "Dec 18-28",
         "cost": 564,
-        "images": {
-            "Chef_kitchens": "08bd33ac-4c9e-44dd-8189-4ffd92d33243.jpg", 
-            "Bed_breakfasts": "b73c38b8-f5ad-41f6-8262-bd741bfe5650.jpg",
-            "Design": "6fdb03d7-aebf-4f9f-bbac-04f5fc3d5212.webp",
-            "Cabins": "848cb263-04df-4e65-860d-9fe1d62dfded.webp",
-            "Beach": "20e8d0e0-da37-4634-bcd5-640001cb52f9.jpg",
-            "Amazing_pools":"16907e24-b7b9-4382-8259-06d2c1525461.webp"
-        },
+        "images": [
+            {"Chef_kitchens": "08bd33ac-4c9e-44dd-8189-4ffd92d33243.jpg"}, 
+            {"Bed_breakfasts": "b73c38b8-f5ad-41f6-8262-bd741bfe5650.jpg"},
+            {"Design": "6fdb03d7-aebf-4f9f-bbac-04f5fc3d5212.webp"},
+            {"Cabins": "848cb263-04df-4e65-860d-9fe1d62dfded.webp"},
+            {"Beach": "20e8d0e0-da37-4634-bcd5-640001cb52f9.jpg"},
+            {"Amazing_pools":"16907e24-b7b9-4382-8259-06d2c1525461.webp"}
+        ],
         "distance": "Portual",
         "trend": ["Chef_kitchens","Bed_breakfasts","Design","Cabins","Beach","Amazing_pools"]
     },
@@ -208,14 +208,14 @@
         "host": "Henry",
         "date": "Dec 18-28",
         "cost": 564,
-        "images": {
-            "Chef_kitchens": "c08ab1d7-9840-4e94-ac01-c4f68b539ade.webp", 
-            "Bed_breakfasts": "080bf40f-bce4-45c4-9c0a-56ad9fb26e80.webp",
-            "Design": "821bc2b1-152a-43fb-98da-538c2fb95dbf.webp",
-            "Cabins": "5e4df43c-9892-47cb-b20c-be9437af3ad4.webp",
-            "Beach": "29163dfc-6dfb-4344-ac33-36f0fcb727ba.webp",
-            "Top_of_the_world":"821bc2b1-152a-43fb-98da-538c2fb95dbf.webp"
-        },
+        "images": [
+            {"Chef_kitchens": "c08ab1d7-9840-4e94-ac01-c4f68b539ade.webp"}, 
+            {"Bed_breakfasts": "080bf40f-bce4-45c4-9c0a-56ad9fb26e80.webp"},
+            {"Design": "821bc2b1-152a-43fb-98da-538c2fb95dbf.webp"},
+            {"Cabins": "5e4df43c-9892-47cb-b20c-be9437af3ad4.webp"},
+            {"Beach": "29163dfc-6dfb-4344-ac33-36f0fcb727ba.webp"},
+            {"Top_of_the_world":"821bc2b1-152a-43fb-98da-538c2fb95dbf.webp"}
+        ],
         "distance": "Portual",
         "trend": ["Chef_kitchens","Bed_breakfasts","Design","Cabins","Beach","Top_of_the_world"]
     }

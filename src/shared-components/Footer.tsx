@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <div className='footer_line'>
 
-        <div className='horizontal_line'></div>
 
         <div className='footer'>
 
@@ -42,34 +41,38 @@ const Footer = () => {
                 <a href="">
                     Choices
                 </a> 
-                <span className='dot'>
-                    <MdDone />
-                    <TiTimes />
+                <span className='dot drug'>
+                    <MdDone className='done'/>
+                    <TiTimes className='times'/>
                 </span>
                 <span className='dot'>
                     <PiDot />
                 </span> 
-                <button>
+                <span>
                     Destinations
-                </button>
+                </span>
                 
             </div>
             
             <div className='right_side'>  
-                <span className='dot'>         
+                <span className='dot space'>         
                     <TbWorld />
                 </span>
-                <button>
+                <span className='space'>
                     English (US) 
-                </button>
-                <button>
-                    <span>$</span> 
-                    <span>USD</span>  
-                </button>
+                </span>
                 <span>
+                    <span className='space'>
+                        $
+                    </span> 
+                    <span className='space'>
+                        USD
+                    </span>  
+                </span>
+                <span className='space'>
                     Support & resources
                 </span>
-                <span className='dot'>
+                <span className='dot space'>
                     <MdKeyboardArrowUp />
                 </span>
             </div>

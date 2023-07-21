@@ -169,8 +169,6 @@
 }
 
 .horizontal_lineNav {
-    height: 5px;
-    background-color: #dddddd;
-    box-shadow: 0 1.5px 4px #c1c0c0;
-    mix-blend-mode: difference;
+    height: 1.5px;
+    box-shadow: 0 1px 6px #e2e1e1;
 } 
