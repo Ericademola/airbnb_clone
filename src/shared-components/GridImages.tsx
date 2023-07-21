@@ -1,42 +1,51 @@
-// import { Listing } from '../interfaces/listing';
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
+import { GoHeart } from 'react-icons/go';
 
-type Listing = {
-    id: number;
-    name:  string;
-    rating: number;
-    host: string;
-    date: string;
-    cost : number;
-    images: {
-        Rooms?: string;
-        Design?: string;
-        Top_of_the_world?: string; 
-        Tropical?: string;
-        Cabins?: string;
-        Barns?: string;
-        Amazing_pools?: string;
-        Bed_breakfasts?: string;
-        Chef_kitchens?: string;
-        Beach?: string;
-        Campers?: string;
-        Windmills?: string;
-        New?: string;
-        Mansions?: string;
-        Caves?: string;
-        Arctic?: string;
-        Iconic_Cities?: string;
-        Golfing?: string;
-        Castles?: string;
-        Boats?: string;
-    }
-    distance: string;
-    trend: string[];
-}
+import './GridImages.css'
 
-const GridImages = () => {
+const GridImages = ({pictures, trend}: any) => {
+
+  const pics:object[] = pictures;
+
+  const currentTrend:string = trend;
+
+  console.log(pics);
+
+  const picObject:{} = Object.assign({}, ...pics);
+
+  console.log(picObject);
+
+  const imageTitles = Object.keys(picObject); 
+  console.log(imageTitles);
+   
+  const index = imageTitles.indexOf(currentTrend);
+
+  console.log(index);
+
+  const firstPic = pics[index]
+
+  pics.splice(index, 1);
+
+  pics.unshift(firstPic);
+
+  console.log(pics);
+
+  const imageValue = Object.values(picObject); 
+  console.log(imageTitles);
+
+  const n:number = 0;
+
   return (
-    <div>
-        {/* <img src={`images/list.images.${showImages}`} alt={list.name} /> */}
+    <div className="pictures" id='pic' style={{background: `url(images/${imageValue[n]}) no-repeat center center/cover`}}>
+      <GoHeart />
+    <div className='left_pic'>
+      <span className='button' ><MdKeyboardArrowLeft/></span>
+    </div>
+
+    <div className='right_pic'>
+      <span className='button' ><MdKeyboardArrowRight/></span>
+    </div>
+
     </div>
   )
 }

@@ -1,10 +1,9 @@
-.horizontal_line {
-    height: 1px;
-    background-color: #dddddd;
-}
-
 .footer_line {
     justify-content: space-between;
+    border-top: 1px solid #dddddd;
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
 }
 
 .footer {
@@ -38,4 +37,24 @@
     align-items: center;
     margin-top: 57%px;
     padding-top: 5px;
+}
+
+.done {
+    background-color: #fff;
+    color: blue;
+    border-radius: 45% 0% 0 45%;
+    border: 1px solid blue;
+    font-size: 10.5px;
+    margin-left: 5px;
+}
+
+.times {
+    background-color: blue; 
+    color: #fff;
+    border-radius: 0 45% 45% 0;
+    border: 1px solid blue;
+    font-size: 10.5px
+}
+.space {
+    margin-right: 8px;
 }

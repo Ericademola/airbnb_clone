@@ -2,9 +2,8 @@
     display: grid;
     gap: 30px 21px;
     grid-template-columns: auto auto auto auto;
-    /* background-color: #2196F3; */
     padding: 0 40px;
-
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .gridItem {
@@ -13,19 +12,19 @@
     height: 420px;
 }
 
-.pictures {
+/* .pictures {
     background-color: red;
     width: 100%;
     height: 300px;
     border-radius: 20px;
     position: relative;
-}
+} */
 
-.pictures img {
+/* .pictures img {
     width: 100%;
     height: 100%;
-}
-
+} */
+/* 
 .left_pic {
     position: absolute;
     left: 2%;
@@ -36,4 +35,4 @@
     position: absolute;
     right: 2%;
     top: 40%;
-}
+} */

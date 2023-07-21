@@ -5,22 +5,13 @@ import { useState } from 'react';
 
 const PriceToggle = () => {
 
-  const [onToggle, setOnToggle] = useState<boolean>(false);
-  const [checkMoveNext, setCheckMoveNext] = useState<boolean>(false);
   const [showMark, setShowMark] = useState<boolean>(false);
-
-
 
   const toggleOn = () => {
 
     setShowMark(!showMark)
 
-    setOnToggle(true);
     document.getElementById("toggleBoxChange")?.classList.toggle('toggleBoxChange');
-
-    setCheckMoveNext(prevState => {
-      return !prevState
-    })
 
   }
 
@@ -48,10 +39,9 @@ const PriceToggle = () => {
           </p>
         </div>
 
-        <div onAnimationEnd={toggleOn}
-        className=  'toggleBoxToggle' id="toggleBoxChange">
+        <div className='toggleBoxToggle' id="toggleBoxChange">
 
-          <button className='button' onClick={toggleOn}>{showMark ? <MdDone/> : ''}</button>
+          <button className='toggleButton' onClick={toggleOn}>{showMark ? <MdDone/> : ''}</button>
 
         </div>
       </div>
@@ -60,6 +50,4 @@ const PriceToggle = () => {
 
   )
 }
-export default PriceToggle
-
-// showMark ? 'buttonMove' :
+export default PriceToggle;
