@@ -218,6 +218,116 @@
         ],
         "distance": "Portual",
         "trend": ["Chef_kitchens","Bed_breakfasts","Design","Cabins","Beach","Top_of_the_world"]
+    },
+    {
+        "id": 13,
+        "name":  "Terrasini, Italy",
+        "rating": 4.94,
+        "host": "Henry",
+        "date": "Aug 7-12",
+        "cost": 914,
+        "images": [
+            {"Amazing_pools": "77529636-6c95-4599-9dc3-c9442ff4fc28.webp"}, 
+            {"Rooms": "9d4c4d58-b9e6-4a2d-9883-eb2df68c0ba0.webp"},
+            {"Cabins": "3d966c94-4c87-479b-8eeb-4889e9fb6ac9.webp"},
+            {"Design": "39cdf5aa-a5d6-4f55-893c-73bf310dd598.webp"},
+            {"Trending": "eeffdea4-bbcf-4a05-bcb9-579a03bf41ab.webp"},
+            {"Top_of_the_world":"7adb766a-fe61-4895-a8c4-8f171c9b2973.webp"}
+        ],
+        "distance": "Italy",
+        "trend": ["Amazing_pools","Rooms","Design","Trending","Cabins","Top_of_the_world"]
+    },
+    {
+        "id": 14,
+        "name":  "Marrakech, Morocco",
+        "rating": 4.94,
+        "host": "Ahmed",
+        "date": "Jul 23-29",
+        "cost": 914,
+        "images": [
+            {"Golfing": "c186f664-4bf1-4249-8b0d-7ac9959474bc.webp"}, 
+            {"Chef_kitchens": "fcf9e43d-cd0e-48b7-b93f-ece1654d92ad.webp"},
+            {"Cabins": "00c827a8-6c2d-4098-bef6-8a619ada14f0.webp"},
+            {"Design": "59d5c4b9-17dc-418e-832d-921a33a17db2.webp"},
+            {"Trending": "eeffdea4-bbcf-4a05-bcb9-579a03bf41ab.webp"},
+            {"Rooms":"df5efa29-8a54-4330-a2bb-b840f3ffc78c.webp"}
+        ],
+        "distance": "Morocco",
+        "trend": ["Golfing","Rooms","Design","Trending","Cabins","Chef_kitchens"]
+    },
+    {
+        "id": 15,
+        "name":  "Marrakech, Morocco",
+        "rating": 4.94,
+        "host": "Ahmed",
+        "date": "Jul 23-29",
+        "cost": 914,
+        "images": [
+            {"Golfing": "f933535a-2bed-4aa0-80e1-df1ae0c7364e.webp"}, 
+            {"Chef_kitchens": "fcf9e43d-cd0e-48b7-b93f-ece1654d92ad.webp"},
+            {"Cabins": "00c827a8-6c2d-4098-bef6-8a619ada14f0.webp"},
+            {"Design": "59d5c4b9-17dc-418e-832d-921a33a17db2.webp"},
+            {"Trending": "eeffdea4-bbcf-4a05-bcb9-579a03bf41ab.webp"},
+            {"Rooms":"df5efa29-8a54-4330-a2bb-b840f3ffc78c.webp"}
+        ],
+        "distance": "Morocco",
+        "trend": ["Golfing","Rooms","Design","Trending","Cabins","Chef_kitchens"]
+    },
+    {
+        "id": 16,
+        "name":  "Marrakech, Morocco",
+        "rating": 4.94,
+        "host": "Nurah",
+        "date": "Sept 23-29",
+        "cost": 914,
+        "images": [
+            {"Golfing": "f933535a-2bed-4aa0-80e1-df1ae0c7364e.webp"}, 
+            {"Rooms": "a0692c83-50c5-4089-943f-7d820c492435.webp"},
+            {"Amazing_pools": "3389cc8d-c8d9-4277-aab0-718c384682f4.webp"},
+            {"Design": "59d5c4b9-17dc-418e-832d-921a33a17db2.webp"},
+            {"Trending": "eeffdea4-bbcf-4a05-bcb9-579a03bf41ab.webp"},
+            {"Rooms":"df5efa29-8a54-4330-a2bb-b840f3ffc78c.webp"}
+        ],
+        "distance": "Morocco",
+        "trend": ["Golfing","Rooms","Design","Trending","Cabins","Chef_kitchens"]
+    },
+    {
+      
+        "id": 17,
+        "name":  "Marrakech, Morocco",
+        "rating": 4.94,
+        "host": "Nurah",
+        "date": "Sept 23-29",
+        "cost": 914,
+        "images": [
+            {"Golfing": "f933535a-2bed-4aa0-80e1-df1ae0c7364e.webp"}, 
+            {"Rooms": "a0692c83-50c5-4089-943f-7d820c492435.webp"},
+            {"Amazing_pools": "3389cc8d-c8d9-4277-aab0-718c384682f4.webp"},
+            {"Design": "59d5c4b9-17dc-418e-832d-921a33a17db2.webp"},
+            {"Trending": "eeffdea4-bbcf-4a05-bcb9-579a03bf41ab.webp"},
+            {"Rooms":"df5efa29-8a54-4330-a2bb-b840f3ffc78c.webp"}
+        ],
+        "distance": "Morocco",
+        "trend": ["Golfing","Rooms","Design","Trending","Cabins","Chef_kitchens"]
+    },
+    {
+      
+        "id": 18,
+        "name":  "Marrakech, Morocco",
+        "rating": 4.94,
+        "host": "Nurah",
+        "date": "Sept 23-29",
+        "cost": 914,
+        "images": [
+            {"Golfing": "f933535a-2bed-4aa0-80e1-df1ae0c7364e.webp"}, 
+            {"Rooms": "a0692c83-50c5-4089-943f-7d820c492435.webp"},
+            {"Amazing_pools": "3389cc8d-c8d9-4277-aab0-718c384682f4.webp"},
+            {"Design": "59d5c4b9-17dc-418e-832d-921a33a17db2.webp"},
+            {"Trending": "eeffdea4-bbcf-4a05-bcb9-579a03bf41ab.webp"},
+            {"Rooms":"df5efa29-8a54-4330-a2bb-b840f3ffc78c.webp"}
+        ],
+        "distance": "Morocco",
+        "trend": ["Golfing","Rooms","Design","Trending","Cabins","Chef_kitchens"]
     }
 ]
 

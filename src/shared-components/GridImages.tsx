@@ -1,5 +1,5 @@
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
-import { GoHeart } from 'react-icons/go';
+import { BsHeartFill } from 'react-icons/bs';
 
 import './GridImages.css'
 
@@ -31,20 +31,32 @@ const GridImages = ({pictures, trend}: any) => {
   console.log(pics);
 
   const imageValue = Object.values(picObject); 
+  console.log(imageValue);
+
+
   console.log(imageTitles);
 
   const n:number = 0;
 
   return (
-    <div className="pictures" id='pic' style={{background: `url(images/${imageValue[n]}) no-repeat center center/cover`}}>
-      <GoHeart />
-    <div className='left_pic'>
-      <span className='button' ><MdKeyboardArrowLeft/></span>
-    </div>
+    <div className="pictures" style={{background: `url(../images/${imageValue[n]}) no-repeat center center/cover`}}>
+      
+      <div className='heart'>
+        <BsHeartFill className='heart_icon'/>
+        {/* <BsHeartFill className='heart_icon2'/> */}
+      </div>
 
-    <div className='right_pic'>
-      <span className='button' ><MdKeyboardArrowRight/></span>
-    </div>
+      <div className='pic_button'>
+          
+        <div className='left_pic'>
+          <span className='button' ><MdKeyboardArrowLeft/></span>
+        </div>
+
+        <div className='right_pic'>
+          <span className='button' ><MdKeyboardArrowRight/></span>
+        </div>
+
+      </div>
 
     </div>
   )

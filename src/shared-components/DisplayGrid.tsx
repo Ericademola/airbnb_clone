@@ -1,4 +1,6 @@
-import { MdOutlineStar } from "react-icons/md"
+import { MdOutlineStar } from "react-icons/md";
+import { HiMap } from "react-icons/hi";
+import { PiListBulletsBold } from "react-icons/pi";
 import GridImages from "./GridImages";
 import listings from '../db/db.json';
 import './DisplayGrid.css';
@@ -13,7 +15,8 @@ const DisplayGrid = ({homeTrendDisplayed, showImages}:any) => {
     const selected = listings.filter(select => select.trend.includes(displayedTrend));
 
   return (
-    <div>
+    
+    <div className="lists_display">
         
         <div className='trendGridContainer'>
 
@@ -26,20 +29,35 @@ const DisplayGrid = ({homeTrendDisplayed, showImages}:any) => {
 
                     </div>
 
-                    <div style={{justifyContent: "space-between", display: "flex"}}>
-                        <span>{list.name}</span> <span><MdOutlineStar /> {list.rating}</span>
+                    <div className="location">
+                        <span>
+                            {list.name}
+                        </span> 
+                        <span className="rating">
+                            <MdOutlineStar className="rating_star"/> {list.rating}
+                        </span>
                     </div>
 
-                    <div><small>stay with {list.host}</small></div>
-                    <div><small>{list.date}</small></div>
-                    <div><small>${list.cost} night</small></div>
+                    <div>
+                        <p>Stay with {list.host}</p>
+                    </div>
+
+                    <div>
+                        <p>{list.date}</p>
+                    </div>
+
+                    <div>
+                        <u>
+                            <b>${list.cost}</b> night
+                        </u>
+                    </div>
 
                 </div>
 
             </div>)}
-
+            
         </div>
-
+        
     </div>
   )
 }

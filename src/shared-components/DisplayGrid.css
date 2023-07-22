@@ -8,31 +8,38 @@
 
 .gridItem {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    height: 420px;
+    height: 380px;
 }
 
-/* .pictures {
-    background-color: red;
-    width: 100%;
-    height: 300px;
-    border-radius: 20px;
-    position: relative;
-} */
-
-/* .pictures img {
-    width: 100%;
-    height: 100%;
-} */
-/* 
-.left_pic {
-    position: absolute;
-    left: 2%;
-    top: 40%;
+.heart {
+    justify-self: self-end;
 }
 
-.right_pic {
-    position: absolute;
-    right: 2%;
-    top: 40%;
-} */
+.location {
+    font-weight: bold;
+    margin: 8px 0 2px 0;
+    color: rgb(45, 44, 44);
+    justify-content: space-between;
+    display: flex;
+}
+
+.rating {
+    align-items: center;
+    display: inline-flex;
+    font-weight: lighter;
+}
+
+.rating_star {
+    margin-right: 4px;
+}
+
+.gridItem p {
+    margin-bottom: 2px;
+    color: rgb(73, 72, 72);
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.gridItem u {
+    color: #000;
+}
