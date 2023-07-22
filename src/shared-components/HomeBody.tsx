@@ -1,7 +1,6 @@
 import Nav from "./Nav";
 import PriceToggle from "./PriceToggle";
 import { useState } from "react";
-import './HomeBody.css';
 import DisplayGrid from "./DisplayGrid";
 
 
@@ -10,20 +9,20 @@ const HomeBody = () => {
     const [homeTrendDisplayed, setHomeTrendDisplayed] = useState<string>();
 
     const getPicDisplay = (first: string) => {
-        setHomeTrendDisplayed(first)
+      setHomeTrendDisplayed(first)
     }
     
-    console.log(homeTrendDisplayed);
+  console.log(homeTrendDisplayed);
 
     
   return (
     <div className="main_body">
 
-        <Nav getPicDisplay={getPicDisplay}/>
+      <Nav getPicDisplay={getPicDisplay}/>
 
-        <PriceToggle />
+      <PriceToggle />
 
-        <DisplayGrid homeTrendDisplayed = {homeTrendDisplayed}/>
+      <DisplayGrid homeTrendDisplayed = {homeTrendDisplayed}/>
 
     </div>
   )

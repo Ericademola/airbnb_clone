@@ -1,8 +1,7 @@
 .nav_top {
-    position: -webkit-sticky;
     position: sticky;
-    top: 13.1%;
-    margin-top: 25px;
+    top: 13.2%;
+    margin-top: 15px;
 }
 
 .nav {
