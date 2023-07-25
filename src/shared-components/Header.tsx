@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
 
   return (
-    <div className='top_up'>
+    <header className='top_up'>
 
-        <header className='top'>
+        <div className='top'>
 
             <div className='logo_section'>
                 <Link to='/'>
@@ -52,9 +52,9 @@ const Header = () => {
 
             <div className='horizontal_line'></div>
 
-        </header>
+        </div>
 
-    </div>
+    </header>
   )
 }
 export default Header

@@ -1,7 +1,19 @@
+.parent{
+    width: 100%;
+    height: 280px;
+    /* border-radius: 20px; */
+}
+
 .pictures {
     width: 100%;
     height: 280px;
     border-radius: 20px;
+    /* animation-timing-function: linear; */
+    transition: background-image 2s;
+    /* transition-timing-function: linear;
+    animation-fill-mode: forwards; */
+    /* margin-left: 50%; */
+
 }
 
 .heart {
@@ -26,4 +38,58 @@
     justify-content: space-between;
     height: 80%;
     padding: 0 5px;
+}
+
+.right_pic {
+margin-left: auto;
+}
+
+.forward {
+    /* height: 70px;
+    display: flex;
+    width: max-content;
+    gap: 35px;
+    align-items: flex-end; */
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-name: move-horizontalForward;
+}
+
+/* .forward a {
+    text-decoration: none;
+} */
+
+@keyframes move-horizontalForward {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
+
+.backward {
+    height: 70px;
+    display: flex;
+    width: max-content;
+    gap: 35px;
+    align-items: flex-end;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-name: move-horizontalBackward;
+}
+
+.backward a {
+    text-decoration: none;
+}
+
+@keyframes move-horizontalBackward {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
 }

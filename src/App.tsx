@@ -27,7 +27,7 @@ function App() {
         <Route path="/DisplayLocationMap" element={<DisplayMap />} />
       </Routes>
 
-      <Link to={'/DisplayLocationMap'}>
+      {/* <Link to={'/DisplayLocationMap'}> */}
 
         <button className="map_button" onClick={displayMap}>
 
@@ -46,7 +46,7 @@ function App() {
 
         </button>
         
-      </Link>
+      {/* </Link> */}
 
     </div>
   );

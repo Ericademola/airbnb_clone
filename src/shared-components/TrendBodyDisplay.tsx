@@ -21,23 +21,23 @@ const TrendBodyDisplay = () => {
     });
 
 
-    const [showArror, setShowArror] = useState<boolean>(false);
+    // const [showArror, setShowArror] = useState<boolean>(false);
 
-    const displayArror = () => {
-        if (showArror === false) {
-            setShowArror(true);
-        } else {setShowArror(false)}
-    }
+    // const displayArror = () => {
+    //     if (showArror === false) {
+    //         setShowArror(true);
+    //     } else {setShowArror(false)}
+    // }
 
-    const [seePics, setSeePics] = useState();
+    // const [seePics, setSeePics] = useState();
 
-    const showNextPic = (images:{}) => {
-        const pics = Object.values(images);
+    // const showNextPic = (images:{}) => {
+    //     const pics = Object.values(images);
         
-        console.log(pics);
-    };
+    //     console.log(pics);
+    // };
 
-    const showPevPic = () => {};
+    // const showPevPic = () => {};
 
   return (
     <div>

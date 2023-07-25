@@ -112,6 +112,21 @@ const trends: Icon[] = [
         icon: <GiCornerFlag />,
         label: "Top_of_the_world"
     },
+    {
+        id: 22,
+        icon: <GiCornerFlag />,
+        label: "Top_of_the_world"
+    },
+    {
+        id: 23,
+        icon: <GiCornerFlag />,
+        label: "Top_of_the_world"
+    },
+    {
+        id: 24,
+        icon: <GiCornerFlag />,
+        label: "Top_of_the_world"
+    }
 ]
 
 export default trends;

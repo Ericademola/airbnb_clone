@@ -7,7 +7,7 @@ import { PiDot, PiCopyrightLight } from 'react-icons/pi';
 
 const Footer = () => {
   return (
-    <div className='footer_line'>
+    <footer className='footer_line'>
 
 
         <div className='footer'>
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
 
 
-    </div>
+    </footer>
   )
 }
 export default Footer
