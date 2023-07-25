@@ -4,7 +4,7 @@ import trends from '../constants/trendIcon';
 import { Icon } from '../interfaces/trendIcon';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Nav = ({getPicDisplay}:any) => {    
 
@@ -90,9 +90,9 @@ const Nav = ({getPicDisplay}:any) => {
 
 
     return (
-        <div className='nav_top'>
+        <nav className='nav_top'>
             
-            <nav className='nav'>
+            <div className='nav'>
 
                 { leftArrow &&
                     <div className='left_arrow'>
@@ -105,7 +105,7 @@ const Nav = ({getPicDisplay}:any) => {
 
                     {displayedTrends && displayedTrends.map((trend:Icon) => <div key={trend.id}>
 
-                        <Link to={`/Trendings/${trend.label}`} state={`${trend.label}`}>
+                        <NavLink to={`/Trendings/${trend.label}`} state={`${trend.label}`}>
 
                             <div className='trend_filters'>
                                 <div className='trend_icon'>
@@ -115,7 +115,7 @@ const Nav = ({getPicDisplay}:any) => {
                                 <div className='horizontal_lineIcon'></div>
                             </div>
 
-                        </Link>
+                        </NavLink>
 
                     </div>)}
                     
@@ -126,11 +126,11 @@ const Nav = ({getPicDisplay}:any) => {
                     <span className='filter'><IoMdSwitch /> fliter</span>
                 </div>
 
-            </nav>
+            </div>
 
             <div id='lineNav'></div>
 
-        </div>
+        </nav>
     )
 }
 export default Nav
