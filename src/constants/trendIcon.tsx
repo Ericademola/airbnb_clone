@@ -20,113 +20,70 @@ const trends: Icon[] = [
     },
     {
         id: 3,
-        icon: <IoIosSnow />,
-        label: "Arctic"
-    },
-    {
-        id: 4,
         icon: <GiBarn />,
         label: "Barns"
     },
     {
-        id: 5,
+        id: 4,
         icon: <PiKeyLight />,
         label: "New"
     },
     {
-        id: 6,
-        icon: <GiMountainCave />,
-        label: "Caves"
-    },
-    {
-        id: 7,
+        id: 5,
         icon: <TbBuildingSkyscraper />,
         label: "Iconic_Cities"
     },
     {
-        id: 8,
+        id: 6,
         icon: <GiFamilyHouse />,
         label: "Mansions"
     },
     {
-        id: 9,
+        id: 7,
         icon: <PiFire />,
         label: "Trending"
     },
     {
-        id: 10,
-        icon: <MdSportsGolf />,
-        label: "Golfing"
-    },
-    {
-        id: 11,
-        icon: <TbCamper />,
-        label: "Campers"
-    },
-    {
-        id: 12,
+        id: 8,
         icon: <PiCastleTurret />,
         label: "Castles"
     },
     {
-        id: 13,
+        id: 9,
         icon: <TbBeach />,
         label: "Beach"
     },
     {
-        id: 14,
+        id: 10,
         icon: <MdCabin />,
         label: "Cabins"
     },
     {
-        id: 15,
+        id: 11,
         icon: <TbChefHat />,
         label: "Chef_kitchens"
     },
     {
-        id: 16,
+        id: 12,
         icon: <AiOutlineCoffee />,
         label: "Bed_breakfasts"
     },
     {
-        id: 17,
-        icon: <TbSailboat />,
-        label: "Boats"
-    },
-    {
-        id: 18,
+        id: 13,
         icon: <MdOutlineMapsHomeWork />,
         label: "Design"
     },
-    {   id: 19,
-        icon: <GiWindmill />,
-        label: "Windmills"
-    },
     {
-        id: 20,
+        id: 14,
         icon: <PiSwimmingPool />,
         label: "Amazing_pools"
     },
     {
-        id: 21,
+        id: 15,
         icon: <GiCornerFlag />,
         label: "Top_of_the_world"
     },
-    {
-        id: 22,
-        icon: <GiCornerFlag />,
-        label: "Top_of_the_world"
-    },
-    {
-        id: 23,
-        icon: <GiCornerFlag />,
-        label: "Top_of_the_world"
-    },
-    {
-        id: 24,
-        icon: <GiCornerFlag />,
-        label: "Top_of_the_world"
-    }
+
 ]
 
 export default trends;

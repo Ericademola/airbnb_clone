@@ -3,127 +3,154 @@ import { IoMdSwitch } from 'react-icons/io';
 import trends from '../constants/trendIcon';
 import { Icon } from '../interfaces/trendIcon';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Nav = ({getPicDisplay}:any) => {    
+const Nav = ({getPicDisplay}:any) => {  
+    
+    //function to show left button
 
     const [leftArrow, setLeftArrow] = useState<boolean>(false);
-    const [OtherTrends, setOtherTrends] = useState<Icon[] | undefined>(trends.slice(0, 14));
-    const [checkMoveNext, setCheckMoveNext] = useState<boolean>(false);
-    const [checkMovePrev, setCheckMovePrev] = useState<boolean>(false);
+
+    const rightButton = document.getElementById('rightButton');
+
+    const showLeftArror = () => {
+        setLeftArrow(true);
+    }
+
+    rightButton?.addEventListener('click', showLeftArror);
 
 
-    // const random = Math.random() * 10;
-
-    const nextTrend = () => {}
-
-    //     if (random > 7) {
-    //         setOtherTrends(trends.slice(-15, -1))
-    //     } else {setOtherTrends(trends.slice(random))}
-    //     setLeftArrow(true);
-
-    //     setCheckMoveNext(prevState => {
-    //         return !prevState
-    //     })
-
-    // }
-
-    const prevTrend = () => {}
-    //     if (random > 7) {
-    //         setOtherTrends(trends.slice(0, 15))
-    //     } else {setOtherTrends(trends.slice(random))}
-
-    //     setCheckMovePrev(prevState => {
-    //         return !prevState
-    //     })
-    // }
-
+    // function to dispay current hot trand first
 
     const [displayedTrends, setDisplayedTrends] = useState<Icon[]>();
     const [firstTrends, setFirstTrends] = useState<string>();
 
-    const random = Math.round(Math.random() * 10);
-    console.log(random);
+    const currentOne = () => {
 
-    const navList:Icon[] = trends.slice();
-    let pickedNav:Icon = {};
-    const index:number = new Date().getHours();
-    console.log(index);        
-
-    useEffect(() => {
-        
-        console.log(index);        
-        if (index > navList.length) {
-            pickedNav = navList[random];
-            console.log(pickedNav);
-        } else {pickedNav = navList[index]}
+        const navList:Icon[] = trends.slice();
+        let pickedNav:Icon = {};
+        const index:number = Math.round(new Date().getMinutes() / 4);
         pickedNav = navList[index]
         navList.splice(index, 1);
         setFirstTrends(pickedNav.label);
-        console.log(pickedNav);     
         navList.unshift(pickedNav); 
-        console.log(navList)
-       
         setDisplayedTrends(navList);
-        console.log(displayedTrends)
 
+    }
+
+    useEffect(() => {
+        currentOne();
     }, []);
+
+
+    // function to displayPic
 
     const setPicDisplay = () => {
         if (getPicDisplay) {
             getPicDisplay(firstTrends)
         }
     }
-    // setPicDisplay()
+
     useEffect(() => {
         setPicDisplay()
     }, [firstTrends])
+
     
+    //function to add bottom border to nav
 
     window.addEventListener('scroll', (e:any) => {
         const line = document.getElementById('lineNav')
         if(window.scrollY > 0) {
             line?.classList.add('horizontal_lineNav');
         } else { line?.classList.remove('horizontal_lineNav'); }
-    })
+    });
+
+    //function to slider nav
+
+    const navWrapper = useRef<HTMLDivElement>(null!);
+
+    const nav = {
+        height: '72px',
+        display: 'flex',
+        overflow: 'hidden',
+        width: '100%',
+        margin: '0 25px',
+    }
+
+    const sideScroll = (
+        element: HTMLDivElement,
+        speed: number,
+        distance: number,
+        step: number
+        ) => {
+        let scrollAmount = 0;
+        const slideTimer = setInterval(() => {
+          element.scrollLeft += step;
+          scrollAmount += Math.abs(step);
+          if (scrollAmount >= distance) {
+            clearInterval(slideTimer);
+          }
+        }, speed);
+    };
 
 
     return (
         <nav className='nav_top'>
             
-            <div className='nav'>
+            <div 
+            className='nav'
+            style={nav} 
+            ref={navWrapper}>
 
                 { leftArrow &&
                     <div className='left_arrow'>
-                        <span className='button' onClick={prevTrend}><MdKeyboardArrowLeft/></span>
+
+                        <span 
+                        className='button' 
+                        onClick={() => {
+                        sideScroll(navWrapper.current, 25, 300, -40);
+                        }}>
+                            <MdKeyboardArrowLeft/>
+                        </span>
+
                     </div>
                 }
 
-                <div onAnimationEnd={prevTrend}
-                className={checkMoveNext ? ('backward' || 'forward'): 'trend_nav'} id='slider'>
+                {displayedTrends && displayedTrends.map((trend:Icon) => <div key={trend.id}>
 
-                    {displayedTrends && displayedTrends.map((trend:Icon) => <div key={trend.id}>
+                    <NavLink to={`/Trendings/${trend.label}`} state={`${trend.label}`}>
 
-                        <NavLink to={`/Trendings/${trend.label}`} state={`${trend.label}`}>
+                        <div className='trend_nav'>
 
-                            <div className='trend_filters'>
-                                <div className='trend_icon'>
-                                    {trend.icon}
-                                </div>    
-                                <span className='text'>{trend.label}</span>
-                                <div className='horizontal_lineIcon'></div>
-                            </div>
+                            <div className='trend_icon'>
+                                {trend.icon}
+                            </div>  
 
-                        </NavLink>
+                            <span className='text'>{trend.label}</span>
 
-                    </div>)}
+                            <div className='horizontal_lineIcon'></div>
+
+                        </div>
+
+                    </NavLink>
+
+                </div>)}
                     
-                </div>
 
                 <div className='right_arrow'>
-                    <span className='button' onClick={nextTrend}><MdKeyboardArrowRight/></span>
+
+                    <span 
+                    className='button'
+                    id='rightButton'
+                    onClick={() => {
+                    sideScroll(navWrapper.current, 25, 300, +40);
+                    }}>
+                        <MdKeyboardArrowRight/>
+                    </span>
+
                     <span className='filter'><IoMdSwitch /> fliter</span>
+                
                 </div>
 
             </div>
