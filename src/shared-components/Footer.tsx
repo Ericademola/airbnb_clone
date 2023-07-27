@@ -6,9 +6,9 @@ import { PiDot, PiCopyrightLight } from 'react-icons/pi';
 
 
 const Footer = () => {
+
   return (
     <footer className='footer_line'>
-
 
         <div className='footer'>
 

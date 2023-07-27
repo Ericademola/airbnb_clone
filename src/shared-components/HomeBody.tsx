@@ -6,11 +6,11 @@ import DisplayGrid from "./DisplayGrid";
 
 const HomeBody = () => {
 
-    const [homeTrendDisplayed, setHomeTrendDisplayed] = useState<string>();
+  const [homeTrendDisplayed, setHomeTrendDisplayed] = useState<string>();
 
-    const getPicDisplay = (first: string) => {
-      setHomeTrendDisplayed(first)
-    }
+  const getPicDisplay = (first: string) => {
+    setHomeTrendDisplayed(first)
+  }
     
   console.log(homeTrendDisplayed);
 
