@@ -4,6 +4,9 @@
     margin-top: 15px;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    padding-right: 110px;
+    display: flex;
 }
 
 .nav a {
@@ -59,18 +62,26 @@
 }
 
 .right_arrow {
-    margin-top: 2px;
     position: absolute;
     right: 0;
     top: 0;
     display: flex;
-    padding: 10px 0 5px 0;
-    background-color: rgb(255, 255, 255);
+    gap: 8px;
+    padding: 6px 0 5px 0;
+    align-items: center;
+}
+
+.button_base {
+    padding: 18px 17px 0 0;
     box-shadow: -25px 0 10px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    justify-content: center;
     align-items: center;
 }
 
 .button {
+    margin-top: 30px;
     padding: 2px 5px;
     border-radius: 66px;
     border: 1px solid #ddd;
@@ -90,7 +101,6 @@
 }
 
 .filter {
-    margin-left: 23px;
     margin-right: 40px;
     padding: 13px 18px;
     border: 1px solid #ddd;
@@ -100,6 +110,7 @@
     align-items: center;
     font-size: 16px;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .horizontal_lineNav {

@@ -140,18 +140,22 @@ const Nav = ({getPicDisplay}:any) => {
 
                 <div className='right_arrow'>
 
-                    <span 
-                    className='button'
-                    id='rightButton'
-                    onClick={() => {
-                    sideScroll(navWrapper.current, 25, 300, +40);
-                    }}>
-                        <MdKeyboardArrowRight/>
+                    <span className='button_base'>
+                        <span 
+                        className='button'
+                        id='rightButton'
+                        onClick={() => {
+                        sideScroll(navWrapper.current, 25, 300, +40);
+                        }}>
+                            <MdKeyboardArrowRight/>
+                        </span>
                     </span>
 
                     <span className='filter'><IoMdSwitch /> fliter</span>
                 
                 </div>
+
+                {/* <span className='filter'><IoMdSwitch /> fliter</span> */}
 
             </div>
 
