@@ -9,6 +9,10 @@
     display: flex;
 }
 
+.nav {
+    margin: 0 25px;
+}
+
 .nav a {
     text-decoration: none;
 }
@@ -114,19 +118,151 @@
 
 .horizontal_lineNav {
     height: 5px;
-    /* background-color: #dddddd; */
+    background-color: #dddddd;
     box-shadow: 0 1px 10px #dddddd;
-    background-color: red;
 } 
 
 @media screen and (max-width: 576px) {
+
     .nav_top {
+        position: sticky;
+        top: 13.2%;
+        margin-top: 0px;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+        max-width: 100%;
+        padding-right: 0px;
+        display: flex;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .nav {
+        margin: 0 0px;
+    }
+    
+    .nav a {
+        text-decoration: none;
+    }
+    
+    .trend_nav {
+        height: 60px;
+        width: auto;
+        text-align: center;
+        align-items: flex-end;
+        color: #717171;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        margin: 0 15px;
+        padding-bottom: 8px;
+    }
+    
+    .trend_nav:hover {
+        color: #000000;
+        border-bottom: 2px solid #dddddd;
+        cursor: pointer;
+    }
+    
+    .active {
+        height: 60px;
+        text-align: center;
+        align-items: flex-end;
+        color: #000000;
+        border-bottom: 2px solid #000000;
+    }
+    
+    .active:hover {
+        height: 60px;
+        text-align: center;
+        align-items: flex-end;
+        color: #000000;
+        border-bottom: 2px solid #000000; 
+        cursor: context-menu;
+    }
+    
+    .trend_icon {
+        padding-top: 8px;
+        font-size: 24px;
+    }
+    
+    .left_arrow {
         display: none;
     }
+    
+    .right_arrow {
+        display: none;
+    }
+    
+    .horizontal_lineNav {
+        display: none;
+    } 
+
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+
     .nav_top {
+        position: sticky;
+        top: 13.2%;
+        margin-top: 0px;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+        max-width: 100%;
+        padding-right: 0px;
+        display: flex;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .nav {
+        margin: 0 0px;
+    }
+    
+    .nav a {
+        text-decoration: none;
+    }
+    
+    .trend_nav {
+        height: 60px;
+        width: auto;
+        text-align: center;
+        align-items: flex-end;
+        color: #717171;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        margin: 0 15px;
+        padding-bottom: 8px;
+    }
+    
+    .trend_nav:hover {
+        color: #000000;
+        border-bottom: 2px solid #dddddd;
+        cursor: pointer;
+    }
+    
+    .active {
+        height: 60px;
+        text-align: center;
+        align-items: flex-end;
+        color: #000000;
+        border-bottom: 2px solid #000000;
+    }
+    
+    .active:hover {
+        cursor: context-menu;
+    }
+    
+    .trend_icon {
+        padding-top: 8px;
+        font-size: 24px;
+    }
+    
+    .left_arrow {
         display: none;
     }
+    
+    .right_arrow {
+        display: none;
+    }
+    
+    .horizontal_lineNav {
+        display: none;
+    } 
+
 }

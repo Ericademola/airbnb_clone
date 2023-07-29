@@ -91,7 +91,6 @@ const Nav = ({getPicDisplay}:any) => {
         display: 'flex',
         overflow: 'hidden',
         width: '100%',
-        margin: '0 25px',
     }
 
     const sideScroll = (
@@ -112,79 +111,75 @@ const Nav = ({getPicDisplay}:any) => {
 
 
     return (
-        <nav className='nav_top'>
-            
-            <div 
-            className='nav'
-            style={nav} 
-            ref={navWrapper}>
+        <div>
 
-                { leftArrow &&
-                    <div className='left_arrow'>
+            <nav className='nav_top'>
+                
+                <div 
+                className='nav'
+                style={nav} 
+                ref={navWrapper}>
 
-                        <span 
-                        className='button' 
-                        onClick={() => {
-                        sideScroll(navWrapper.current, 25, 300, -40);
-                        }}>
-                            <MdKeyboardArrowLeft/>
-                        </span>
+                    { leftArrow &&
+                        <div className='left_arrow'>
 
-                    </div>
-                }
-
-                {displayedTrends && displayedTrends.map((trend:Icon) => <div key={trend.id}>
-
-                    <NavLink to={`/Trendings/${trend.label}`} state={`${trend.label}`}>
-
-                        <div className='trend_nav'>
-
-                            <div className='trend_icon'>
-                                {trend.icon}
-                            </div>  
-
-                            <span className='text'>{trend.label}</span>
-
-                            <div className='horizontal_lineIcon'></div>
+                            <span 
+                            className='button' 
+                            onClick={() => {
+                            sideScroll(navWrapper.current, 25, 300, -40);
+                            }}>
+                                <MdKeyboardArrowLeft/>
+                            </span>
 
                         </div>
-
-                    </NavLink>
-
-                </div>)}
-                    
-                <div className='right_arrow'>
-
-                    {rightArrow && 
-                        <span className='button_base'>
-                            <span 
-                            className='button'
-                            id='rightButton'
-                            onClick={() => {
-                            sideScroll(navWrapper.current, 25, 300, +40);
-                            }}>
-                                <MdKeyboardArrowRight/>
-                            </span>
-                        </span>
                     }
 
-                    <span className='filter'><IoMdSwitch /> fliter</span>
-                
+                    {displayedTrends && displayedTrends.map((trend:Icon) => <div key={trend.id}>
+
+                        <NavLink to={`/Trendings/${trend.label}`} state={`${trend.label}`}>
+
+                            <div className='trend_nav'>
+
+                                <div className='trend_icon'>
+                                    {trend.icon}
+                                </div>  
+
+                                <span className='text'>{trend.label}</span>
+
+                                <div className='horizontal_lineIcon'></div>
+
+                            </div>
+
+                        </NavLink>
+
+                    </div>)}
+                        
+                    <div className='right_arrow'>
+
+                        {rightArrow && 
+                            <span className='button_base'>
+                                <span 
+                                className='button'
+                                id='rightButton'
+                                onClick={() => {
+                                sideScroll(navWrapper.current, 25, 300, +40);
+                                }}>
+                                    <MdKeyboardArrowRight/>
+                                </span>
+                            </span>
+                        }
+
+                        <span className='filter'><IoMdSwitch /> fliter</span>
+                    
+                    </div>
+                        
                 </div>
-                     
 
-                {/* <span className='filter'><IoMdSwitch /> fliter</span> */}
+            </nav>
 
-                <div style={{height: '3px', backgroundColor: 'yellow'}}></div>
+            <div id='lineNav'></div>
 
-            </div>
-
-            <div style={{height: '3px', backgroundColor: 'yellow'}}></div>
-            <div id='lineNav' style={{height: '3px', backgroundColor: 'yellow'}}></div>
-            <div id='lineNav' style={{height: '3px', backgroundColor: 'yellow'}}></div>
-            <div style={{height: '3px', backgroundColor: 'yellow'}}></div>
-
-        </nav>
+        </div>
     )
 }
 export default Nav
