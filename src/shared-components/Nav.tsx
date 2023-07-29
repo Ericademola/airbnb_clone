@@ -21,6 +21,22 @@ const Nav = ({getPicDisplay}:any) => {
     rightButton?.addEventListener('click', showLeftArror);
 
 
+    //function to show left button
+
+    const [rightArrow, setRightArrow] = useState<boolean>(true);
+
+    // const showRightArror = () => {
+    //     setRightArrow(false);
+    // }
+
+    // useEffect(() => {
+    //     const showRightArror = () => {
+    //         setRightArrow(false);
+    //     }
+    //     showRightArror()
+    // }, [rightArrow])
+
+
     // function to dispay current hot trand first
 
     const [displayedTrends, setDisplayedTrends] = useState<Icon[]>();
@@ -137,25 +153,36 @@ const Nav = ({getPicDisplay}:any) => {
 
                 </div>)}
                     
-
                 <div className='right_arrow'>
 
-                    <span 
-                    className='button'
-                    id='rightButton'
-                    onClick={() => {
-                    sideScroll(navWrapper.current, 25, 300, +40);
-                    }}>
-                        <MdKeyboardArrowRight/>
-                    </span>
+                    {rightArrow && 
+                        <span className='button_base'>
+                            <span 
+                            className='button'
+                            id='rightButton'
+                            onClick={() => {
+                            sideScroll(navWrapper.current, 25, 300, +40);
+                            }}>
+                                <MdKeyboardArrowRight/>
+                            </span>
+                        </span>
+                    }
 
                     <span className='filter'><IoMdSwitch /> fliter</span>
                 
                 </div>
+                     
+
+                {/* <span className='filter'><IoMdSwitch /> fliter</span> */}
+
+                <div style={{height: '3px', backgroundColor: 'yellow'}}></div>
 
             </div>
 
-            <div id='lineNav'></div>
+            <div style={{height: '3px', backgroundColor: 'yellow'}}></div>
+            <div id='lineNav' style={{height: '3px', backgroundColor: 'yellow'}}></div>
+            <div id='lineNav' style={{height: '3px', backgroundColor: 'yellow'}}></div>
+            <div style={{height: '3px', backgroundColor: 'yellow'}}></div>
 
         </nav>
     )

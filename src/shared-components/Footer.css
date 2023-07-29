@@ -10,6 +10,7 @@
     display: flex;
     padding: 13px 40px 14px;
     justify-content: space-between;
+    background-color: rgb(255, 255, 255);
 }
 
 .left_side {
@@ -25,7 +26,8 @@
 
 .left_side a {
     text-decoration: none;
-    color: #222222;}
+    color: #222222;
+}
 
 .right_side {
     align-items: center;   
@@ -57,4 +59,16 @@
 }
 .space {
     margin-right: 8px;
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
 }
