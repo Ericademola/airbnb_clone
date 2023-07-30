@@ -37,3 +37,15 @@
 .button_icon {
   margin-left: 4px;
 }
+
+@media screen and (max-width: 576px) {
+  .map_button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .map_button {
+    display: none;
+  }
+}
