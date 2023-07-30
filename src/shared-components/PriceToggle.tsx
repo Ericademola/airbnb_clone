@@ -11,7 +11,7 @@ const PriceToggle = () => {
 
     setShowMark(!showMark)
 
-    document.getElementById("toggleBoxChange")?.classList.toggle('toggleBoxChange');
+    document.querySelector(".toggleBoxToggle")?.classList.toggle('toggleBoxChange');
 
   }
 
@@ -21,6 +21,7 @@ const PriceToggle = () => {
     <div className='toggleBox'>
 
       <div className='toggleBoxContent'>
+        
         <div className='toggleBoxText'>
           <p>
             Display total price
@@ -39,11 +40,22 @@ const PriceToggle = () => {
           </p>
         </div>
 
+        <div className='media_toggleBoxText'>
+          <h4>
+            Display total price
+          </h4>
+
+          <p>
+            Includes all fees, before taxes
+          </p>
+        </div>
+
         <div className='toggleBoxToggle' id="toggleBoxChange">
 
           <button className='toggleButton' onClick={toggleOn}>{showMark ? <MdDone/> : ''}</button>
 
         </div>
+
       </div>
 
     </div>

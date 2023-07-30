@@ -11,10 +11,6 @@
     height: 380px;
 }
 
-.heart {
-    justify-self: self-end;
-}
-
 .location {
     font-weight: bold;
     margin: 8px 0 2px 0;
@@ -42,4 +38,28 @@
 
 .gridItem u {
     color: #000;
+}
+
+@media screen and (max-width: 576px) {
+
+    .trendGridContainer {
+        display: grid;
+        gap: 30px 21px;
+        grid-template-columns: auto;
+        padding: 0 25px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    .trendGridContainer {
+        display: grid;
+        gap: 30px 21px;
+        grid-template-columns: auto auto;
+        padding: 0 25px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
 }
