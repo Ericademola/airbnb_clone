@@ -2,9 +2,10 @@ import company from '../assets/airbnb.png';
 import './Header.css'
 import { TbWorld } from 'react-icons/tb';
 import { CgMenu } from 'react-icons/cg';
-import { IoMdContact } from 'react-icons/io';
+import { IoMdContact, IoMdSwitch } from 'react-icons/io';
 import { BiSearchAlt2 } from 'react-icons/bi';
 import { Link } from "react-router-dom";
+import { PiDot } from 'react-icons/pi';
 
 
 const Header = () => {
@@ -50,7 +51,46 @@ const Header = () => {
                 </button>
             </div>
 
-            <div className='horizontal_line'></div>
+        </div>
+
+        <div className='media_top_select'>
+
+            <div className='first_section'>
+                
+                <span className='search'>
+                    <BiSearchAlt2 style={{fontSize: "17px", alignSelf: "center", cursor: "pointer"}}/>  
+                </span>
+
+                <div>
+                    <p>
+                        <button>
+                            <h5 style={{cursor: "pointer"}}>Anywhere</h5>
+                        </button>
+                    </p>
+
+                    <p className='select'>
+                        <button>
+                            <h5 style={{color: "#929292", cursor: "pointer"}}>
+                                Any week
+                            </h5>
+                        </button>
+                        <PiDot />
+                        <button>
+                            <h5 style={{color: "#929292", cursor: "pointer"}}>
+                                Add guests
+                            </h5>
+                        </button>
+                    </p>
+
+                </div> 
+
+            </div>
+
+            <div>
+                <span className='switch_button'>
+                    <IoMdSwitch/>
+                </span>
+            </div> 
 
         </div>
 

@@ -15,6 +15,10 @@
     justify-content: space-between;
 }
 
+.media_toggleBoxText {
+    display: none;
+}
+
 .toggleBoxText {
     padding: 20px;
     display: flex;
@@ -43,4 +47,40 @@
     border: none;
     font-size: 14px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+
+    .toggleBoxText {
+        display: none;
+    }
+
+    .toggleBoxContent {
+        width: 90%;
+    }
+    
+    .media_toggleBoxText {
+        padding: 25px 17px;
+        display: block;
+        color: rgb(57, 57, 57);
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    .toggleBoxText {
+        display: none;
+    }
+
+    .toggleBoxContent {
+        width: 90%;
+    }
+    
+    .media_toggleBoxText {
+        padding: 25px 17px;
+        display: block;
+        color: rgb(57, 57, 57);
+    }
+
 }
