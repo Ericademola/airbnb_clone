@@ -15,6 +15,10 @@
     justify-content: space-between;
 }
 
+.media_toggleBoxText {
+    display: none;
+}
+
 .toggleBoxText {
     padding: 20px;
     display: flex;
@@ -46,13 +50,37 @@
 }
 
 @media screen and (max-width: 576px) {
-    .toggleBox {
+
+    .toggleBoxText {
         display: none;
     }
+
+    .toggleBoxContent {
+        width: 90%;
+    }
+    
+    .media_toggleBoxText {
+        padding: 25px 17px;
+        display: block;
+        color: rgb(57, 57, 57);
+    }
+
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-    .toggleBox {
+
+    .toggleBoxText {
         display: none;
     }
+
+    .toggleBoxContent {
+        width: 90%;
+    }
+    
+    .media_toggleBoxText {
+        padding: 25px 17px;
+        display: block;
+        color: rgb(57, 57, 57);
+    }
+
 }
