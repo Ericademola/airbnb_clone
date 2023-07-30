@@ -70,11 +70,15 @@ const Header = () => {
 
                     <p className='select'>
                         <button>
-                            <h5 style={{color: "#929292", cursor: "pointer"}}>Any week</h5>
+                            <h5 style={{color: "#929292", cursor: "pointer"}}>
+                                Any week
+                            </h5>
                         </button>
                         <PiDot />
                         <button>
-                            <h5 style={{color: "#929292", cursor: "pointer"}}>Add guests</h5>
+                            <h5 style={{color: "#929292", cursor: "pointer"}}>
+                                Add guests
+                            </h5>
                         </button>
                     </p>
 
